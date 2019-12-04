@@ -1,0 +1,82 @@
+{
+    "pages": [
+        "pages/sellerBasic/index/index",
+
+        "pages/manufactor/publish/index",
+
+        "pages/sellerBasic/msg/index",
+
+        "pages/sellerBasic/my/index",
+
+        "pages/sellerBasic/authorize/index",
+        
+        "pages/sellerBasic/editStore/index",
+
+        "pages/manufactor/myWare/index",
+        
+        "pages/manufactor/myWare/lowerWare",
+
+        "pages/agent/myWare/index",
+
+        "pages/agent/myWare/lowerDetails",
+
+        "pages/agent/myWare/changeDetails",
+
+        "pages/sellerBasic/orderManage/index",
+        
+        "pages/sellerBasic/orderManage/orderDetails",
+
+        "pages/sellerBasic/orderManage/sendGood",
+
+        "pages/sellerBasic/orderManage/editGood",
+
+        "pages/sellerBasic/orderManage/orderComment",
+
+        "pages/sellerBasic/orderManage/orderInfo",
+
+        "pages/manufactor/wareCencus/index",
+
+        "pages/manufactor/wareCencus/details",
+
+        "pages/agent/wareCencus/index",
+
+        "pages/agent/wareShop/index",
+
+        "pages/sellerBasic/msgNotify/index",
+
+        "pages/sellerBasic/msg/chat",
+        
+        "pages/sellerBasic/classify/index",
+        
+        "pages/sellerBasic/classify/search",
+
+        "pages/sellerBasic/mySales/index",
+
+        "pages/sellerBasic/mySales/carrySales",
+
+        "pages/sellerBasic/myWare/index",
+
+        "pages/sellerBasic/myWare/details",
+
+        "pages/sellerBasic/myWare/allComment",
+
+        "pages/sellerBasic/myLower/index",
+
+        "pages/agent/couponManage/index",
+
+        "pages/sellerBasic/myCode/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "海淘小程序",
+        "backgroundColor": "#F2F2F2",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 50
+    },
+    "networkTimeout": {
+        "request": 10000
+    },
+    "sitemapLocation": "sitemap.json"
+}

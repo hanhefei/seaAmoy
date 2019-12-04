@@ -1,0 +1,50 @@
+<!--pages/sellerBasic/msg/index-->
+<import src="/template/tabbar/tabbar.wxml"/>
+
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 68rpx;'}}" wx:if="{{stateType == 2}}">
+    <view class="msgList">
+        <view class="everyMsg" wx:for="{{msgList}}" wx:key="{{index}}" data-toid="{{item.toid}}" bindtap="goChat">
+            <view class="lowerImg">
+                <image src="{{item.head_url}}"></image>
+
+                <text wx:if="{{item.last_message.isread > 0}}">未读</text>
+                <text wx:else>已读</text>
+            </view>
+
+            <view class="everyMsgInfo">
+                <text class="everyMsgName">{{item.username}}</text>
+
+                <text class="everyMsgContent">{{item.last_message.content}}</text>
+
+                <text class="everyMsgTime">{{item.last_message.chatTime}}</text>
+            </view>
+
+            <image class="wareImg" src="{{item.shop_url}}"></image>
+        </view>
+    </view>
+</view>
+
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 68rpx;'}}" wx:else>
+    <view class="msgList">
+        <view class="everyMsg" wx:for="{{msgList}}" wx:key="{{index}}" data-toid="{{item.toid}}" bindtap="goChat">
+            <view class="lowerImg">
+                <image src="{{item.head_url}}"></image>
+
+                <text wx:if="{{item.last_message.isread > 0}}">未读</text>
+                <text wx:else>已读</text>
+            </view>
+
+            <view class="everyMsgInfo">
+                <text class="everyMsgName">{{item.username}}</text>
+
+                <text class="everyMsgContent">{{item.last_message.content}}</text>
+
+                <text class="everyMsgTime">{{item.last_message.chatTime}}</text>
+            </view>
+
+            <image class="wareImg" src="{{item.shop_url}}"></image>
+        </view>
+    </view>
+</view>
+
+<template is="tabbar" data="{{tabbarList, tabbarIndex, isIphoneX}}"></template>

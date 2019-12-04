@@ -1,0 +1,316 @@
+/**pages/agent/wareCencus/index**/
+.wareCencusNum {
+    display: flex;
+    width: 690rpx;
+    height: 110rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.wareCencusNum > text {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.wareCencusNum view {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wareCencusNum view text {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.wareCencusNum view text:first-child {
+    color: #EA2243;
+}
+
+.wareTime {
+    display: flex;
+    width: 690rpx;
+    height: 104rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.wareTime > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.timeOptions {
+    position: relative;
+    display: flex;
+    width: 384rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.timeOptions picker {
+    width: 100%;
+}
+.timeOptions text {
+    display: block;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.timeOptions image {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+    transform: rotateY(-50%);
+}
+
+.wareCencusNowNum {
+    display: flex;
+    width: 690rpx;
+    height: 104rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.wareCencusNowNum > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.wareCencusNowNum view {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wareCencusNowNum view text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.wareCencusNowNum view text:first-child {
+    color: #EA2243;
+}
+
+.wareCencusSearch {
+    position: relative;
+    display: flex;
+    width: 690rpx;
+    height: 112rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.cencusSearch {
+    display: block;
+    width: 650rpx;
+    height: 72rpx;
+    padding: 0 20rpx;
+    background: #F4F4F4;
+    border-radius: 42rpx;
+    font-size: 24rpx;
+    text-align: center;
+}
+.cencusSearchLabel {
+    position: absolute;
+    top: 20rpx;
+    left: 30rpx;
+    display: flex;
+    width: 690rpx;
+    height: 72rpx;
+    background: #F4F4F4;
+    border-radius: 42rpx;
+    justify-content: center;
+    align-items: center;
+}
+.cencusSearchLabel image {
+    display: block;
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 20rpx;
+}
+.cencusSearchLabel text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+
+.dateListElement {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+.everyDate {
+    width: 720rpx;
+    padding-left: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.everyDateInfo {
+    display: flex;
+    width: 690rpx;
+    height: 100rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: space-between;
+    align-items: center;
+}
+.everyDateInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #666666;
+}
+.everyDateWare {
+    overflow: hidden;
+    width: 690rpx;
+    padding-right: 30rpx;
+    margin-top: 20rpx;
+}
+.everyWareInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.everyWareInfo > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.everyDescribe {
+    width: 500rpx;
+}
+.everyTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.everyPrice {
+    display: flex;
+    margin-top: 2rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyPrice text {
+    display: block;
+}
+.everyPrice text:first-child {
+    margin-right: 10rpx;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.everyPrice text:last-child {
+    font-size: 20rpx;
+    color: #999999;
+}
+.everyCountry {
+    display: flex;
+    margin-top: 2rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyCountry image {
+    display: block;
+    width: 46rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.everyCountry text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+.everyOtherInfo > text {
+    display: block;
+    font-size: 22rpx;
+    color: #999999;
+}
+.everyNum {
+    display: flex;
+    margin-top: 20rpx;
+    margin-bottom: 38rpx;
+    justify-content: flex-end;
+    align-items: center;
+}
+.everyNum text {
+    display: block;
+    height: 52rpx;
+    padding: 0 20rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.agentListElement {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+.everyAgent {
+    width: 690rpx;
+    padding: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.agentInfo {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.agentInfo image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 30rpx;
+    border-radius: 50%;
+}
+.agentInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.agentSales {
+    display: flex;
+    margin-top: 12rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.agentSales text {
+    display: block;
+}
+.agentSales text:first-child {
+    font-size: 32rpx;
+    color: #333333;
+}
+.agentSales text:last-child {
+    width: 176rpx;
+    height: 52rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.noMore {
+    display: flex;
+    width: 100%;
+    height: 80rpx;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+<!--pages/sellerBasic/mySales/index-->
+<view class="container">
+    <view class="mySales">
+        <view class="saleTextOne">
+            <text>累计销售额</text>
+
+            <text>（元）</text>
+        </view>
+
+        <text class="salesNum">0.00</text>
+
+        <text class="saleTextTwo">不包含待结算 0.00 元</text>
+    </view>
+
+    <view class="salesHandle">
+        <text class="handleText">可提现金额：¥864.00元</text>
+        
+        <text class="handleBtn" bindtap="goCarrySales">提现</text>
+    </view>
+</view>

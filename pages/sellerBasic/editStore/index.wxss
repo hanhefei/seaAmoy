@@ -1,0 +1,185 @@
+/**pages/sellerBasic/editStore/index**/
+page {
+    background: #F2F2F2;
+}
+.storeElement {
+    display: flex;
+    width: 690rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.storeLogo {
+    height: 154rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.storeLogo > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeLogoInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeLogoInfo image:first-child {
+    display: block;
+    width: 96rpx;
+    height: 96rpx;
+    margin-right: 30rpx;
+    border-radius: 16rpx;
+}
+.storeLogoInfo image:last-child {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.storeName {
+    height: 100rpx;
+    margin-bottom: 16rpx;
+}
+.storeName > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeNameInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeNameInfo input {
+    display: block;
+    width: 380rpx;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+    text-align: right;
+}
+.storeNameInfo image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.storeClassify {
+    height: 104rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.storeClassify > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeClassifyInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeClassifyInfo text {
+    display: block;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeClassifyInfo input {
+    display: block;
+    width: 380rpx;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+    text-align: right;
+}
+.storeClassifyInfo image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.storeCountry {
+    height: 104rpx;
+    margin-bottom: 16rpx;
+}
+.storeCountry > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeCountryInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeCountryInfo text {
+    display: block;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storeCountryInfo input {
+    display: block;
+    width: 380rpx;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+    text-align: right;
+}
+.storeCountryInfo image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.storeWareTypeCountry {
+    display: flex;
+    width: 690rpx;
+    height: 100rpx;
+    padding: 0 30rpx;
+    background: #F2F2F2;
+    justify-content: space-between;
+    align-items: center;
+}
+.storeWareTypeCountry text {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+}
+.storePhone {
+    height: 104rpx;
+}
+.storePhone > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.storePhoneInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storePhoneInfo input {
+    display: block;
+    width: 300rpx;
+    margin-right: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+    text-align: right;
+}
+.storePhoneInfo image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+
+.confirm {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}

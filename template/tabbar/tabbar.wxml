@@ -1,0 +1,9 @@
+<template name="tabbar">
+    <view class="tabbarList {{isIphoneX ? 'fix-iphonex-button' : ''}}">
+        <navigator class="everyTabbar" url="{{item.pagePath}}" hover-class="none" open-type="reLaunch" wx:for="{{tabbarList}}" wx:key="{{index}}">
+            <image src="{{index == tabbarIndex ? item.selectedIconPath : item.iconPath}}"></image>
+
+            <text class="{{index == tabbarIndex ? 'selectTabbar' : ''}}">{{item.text}}</text>
+        </navigator>
+    </view>
+</template>

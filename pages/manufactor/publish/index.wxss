@@ -1,0 +1,221 @@
+/**pages/manufactor/publish/index**/
+@import '/template/tabbar/tabbar.wxss';
+
+.everyInput {
+    display: flex;
+    width: 720rpx;
+    height: 100%;
+    padding-left: 30rpx;
+    background: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyElement {
+    display: flex;
+    width: 690rpx;
+    height: 100%;
+    padding-right: 30rpx;
+    background: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyBlockTitle {
+    display: flex;
+    width: 690rpx;
+    height: 100%;
+    padding: 0 30rpx;
+    background: #F9F9F9;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyBorder {
+    height: 98rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.everyBottom {
+    margin-bottom: 16rpx;
+}
+.everyTitile {
+    display: block;
+    width: 134rpx;
+    height: 100rpx;
+    margin-right: 40rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #333333;
+}
+.everyInputElement {
+    display: block;
+    width: 536rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+}
+.selectBox {
+    display: flex;
+    width: 536rpx;
+    height: 100rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectBox text {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+    /* color: #333333; */
+}
+.selectImg {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.everyNorms {
+    margin-bottom: 4rpx;
+}
+.normsElement {
+    display: flex;
+    width: 536rpx;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.normsElement input {
+    display: block;
+    width: 440rpx;
+    height: 100rpx;
+    font-size: 28rpx;
+}
+.normsElement text {
+    display: block;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 24rpx;
+    color: #EA2243;
+}
+.addNewNorms {
+    display: flex;
+    width: 690rpx;
+    height: 88rpx;
+    padding: 0 30rpx;
+    justify-content: flex-end;
+    align-items: center;
+}
+.addNewNorms view {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addNewNorms image {
+    display: block;
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    margin-right: 10rpx;
+}
+.addNewNorms text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+.everyWareInfo {
+    overflow: hidden;
+    display: flex;
+    width: 720rpx;
+    padding-left: 30rpx;
+    background: #ffffff;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.everyWareInfo:last-child .wareImgList {
+    border-bottom: 0!important;
+}
+.wareTilte {
+    display: flex;
+    width: 100%;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    color: #333333;
+}
+.wareTilte text {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+}
+.wareImgList {
+    display: flex;
+    padding-top: 20rpx;
+    padding-bottom: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: flex-start;
+    align-items: center;
+}
+.imgList {
+    position: relative;
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    margin-right: 30rpx;
+    border-radius: 10rpx;
+}
+.everyImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}
+.delImg {
+    position: absolute;
+    top: -13rpx;
+    right: -13rpx;
+    display: block;
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+}
+.addImg {
+    display: flex;
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+    justify-content: center;
+    align-items: center;
+}
+.publishBtn {
+    display: flex;
+    width: 690rpx;
+    padding: 60rpx 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.publishBtn text {
+    display: block;
+    width: 330rpx;
+    height: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.editBtn {
+    display: flex;
+    width: 690rpx;
+    padding: 60rpx 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.editBtn text {
+    display: block;
+    width: 100%;
+    height: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}

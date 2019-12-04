@@ -1,0 +1,33 @@
+.tabbarList {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 96rpx;
+    background: rgb(250,250,250);
+    border-top: 2rpx solid rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+.everyTabbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.everyTabbar image {
+    display: block;
+    width: 52rpx;
+    height: 52rpx;
+    margin-bottom: 2rpx;
+}
+.everyTabbar text {
+    display: block;
+    font-size: 20rpx;
+    color: #A6A1A1;
+    text-align: center;
+}
+.selectTabbar {
+    color: #EA2243!important;
+}

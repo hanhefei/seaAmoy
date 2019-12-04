@@ -1,0 +1,68 @@
+<!--pages/sellerBasic/orderManage/orderInfo-->
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+    <text class="orderCode">订单编号：35478579768956</text>
+
+    <view class="orderElement">
+        <view class="orderInfo">
+            <image src="/resources/imgs/storeImg.png"></image>
+
+            <view class="orderDescribe">
+                <text class="orderTitle">旗舰店 卡西欧（CASIO）手表商务防水男士石英表MTP-1375旗舰店 卡西欧（CASIO）手表商务防水男士石英表MTP-1375</text>
+
+                <view class="orderModel">
+                    <text>重量：1.2kg</text>
+
+                    <text>规格：白色</text>
+                </view>
+
+                <view class="orderPriceInfo">
+                    <view class="orderCountry">
+                        <image src="/resources/imgs/USA.png" alt="国家"></image>
+
+                        <text>美国</text>
+                    </view>
+
+                    <view class="orderPrice">
+                        <text>￥560</text>
+
+                        <text>x1</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="orderPriceElement">
+        <text class="orderPriceText">税费：￥56.00元</text>
+
+        <text class="orderPriceText">运费：￥78.00元</text>
+
+        <view class="orderPriceInfo">
+            <text>总计：</text>
+            
+            <text>￥568.00元</text>
+        </view>
+    </view>
+
+    <view class="addressElement">
+        <view class="addressInfo">
+            <text>张某瑞</text>
+
+            <text>18001258350</text>
+        </view>
+            
+        <text>北京市昌平区立水桥卢卡新天地6号楼2单元305室电联</text>
+    </view>
+
+    <view class="orderImg">
+        <image src="/resources/imgs/storeImg.png" mode="aspectFill"> </image>
+
+        <image src="/resources/imgs/storeImg.png" mode="aspectFill"> </image>
+    </view>
+
+    <view class="expressElement">
+        <text>快递单号：5645346457568</text>
+
+        <text>物流公司：顺丰速递</text>
+    </view>
+</view>

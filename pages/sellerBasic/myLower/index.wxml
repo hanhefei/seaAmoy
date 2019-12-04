@@ -1,0 +1,65 @@
+<!--pages/sellerBasic/myLower/index-->
+<!-- 大B -->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="myLower">
+        <view class="lowerTextOne">
+            <image src="/resources/imgs/question.png"></image>
+
+            <text>邀请代理商规则</text>
+        </view>
+
+        <text class="lowerNum">{{beforeLower}}</text>
+
+        <text class="lowerTextTwo">昨日新增代理商（人）</text>
+    </view>
+
+    <view class="lowerInfo">
+        <text>累计代理商</text>
+        
+        <view class="lowerNum">
+            <text>{{allLower}}</text>
+            <text>人</text>
+        </view>
+    </view>
+
+    <view class="lowerList" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+        <view class="everyLower" wx:for="{{lowerList}}" wx:key="{{index}}">
+            <view class="everyLowerInfo">
+                <image src="{{item.logo}}"></image>
+
+                <text>{{item.shop_name}}</text>
+            </view>
+
+            <text data-lower-id="{{item.id}}" bindtap="delManufactorLower">移除</text>
+        </view>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" wx:else>
+    <view class="lowerCencus">
+        <view class="lowerDay">
+            <text class="lowerNum">{{beforeLower}}</text>
+
+            <text class="lowerTextTwo">昨日新增代理商（人）</text>
+        </view>
+
+        <view class="lowerAll">
+            <text class="lowerNum">{{allLower}}</text>
+
+            <text class="lowerTextTwo">累计粉丝（人）</text>
+        </view>
+    </view>
+
+    <view class="lowerList" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+        <view class="everyLower" wx:for="{{lowerList}}" wx:key="{{index}}">
+            <view class="everyLowerInfo">
+                <image src="{{item.headimg}}"></image>
+
+                <text>{{item.username}}</text>
+            </view>
+
+            <text data-lower-id="{{item.id}}" bindtap="delAgentLower">移除</text>
+        </view>
+    </view>
+</view>

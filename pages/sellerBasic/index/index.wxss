@@ -1,0 +1,247 @@
+/** pages/sellerBasic/index/index **/
+@import '/template/tabbar/tabbar.wxss';
+
+.storeInfo {
+    display: flex;
+    margin-bottom: 14rpx;
+    padding: 28rpx 30rpx 32rpx 30rpx;
+    background: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+}
+.imgInfo {
+    position: relative;
+    width: 96rpx;
+    height: 96rpx;
+    margin-right: 20rpx;
+}
+.imgInfo image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 16rpx;
+}
+.storeEdit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 28rpx;
+    background:rgba(0, 0, 0, .5);
+    border-bottom-left-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+    line-height: 28rpx;
+    font-size: 20rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.storeDataInfo {
+    display: flex;
+    width: 416rpx;
+    height: 96rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeDataInfo > view {
+    display: flex;
+    width: 412rpx;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.storeBorder {
+    display: flex;
+    width: 4rpx;
+    height: 60rpx;
+    background: #F2F2F2;
+}
+.storeName {
+    display: block;
+    width: 100%;
+    font-size: 28rpx;
+    color: #333333;
+}
+.storeData {
+    display: flex;
+    margin-top: 16rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeDataBlock {
+    display: flex;
+    margin-right: 20rpx;
+    font-size: 22rpx;
+    color: #666666;
+    justify-content: flex-start;
+    align-items: center;
+}
+.storeDataBlock image {
+    display: block;
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 6rpx;
+}
+.storeWareNum {
+    display: flex;
+    width: 158rpx;
+    height: 96rpx;
+    font-size: 24rpx;
+    color: #666666;
+    justify-content: center;
+    align-items: center;
+}
+
+.storeDealInfo {
+    position: relative;
+    width: 100%;
+    height: 596rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+}
+.dealWidthBorder {
+    position: absolute;
+    top: 298rpx;
+    left: 174rpx;
+    display: block;
+    width: 402rpx;
+    height: 2rpx;
+    background: #F2F2F2;
+}
+.dealInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dealBox {
+    display: flex;
+    width: 373rpx;
+    height: 100%;
+    flex-direction: column;
+}
+.dealHeightBorder {
+    display: block;
+    width: 2rpx;
+    height: 400rpx;
+    background: #F2F2F2;
+}
+.everyDeal {
+    display: flex;
+    height: 298rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dealInfoOne {
+    display: flex;
+    font-size: 32rpx;
+    color: #333333;
+    justify-content: center;
+    align-items: center;
+}
+.dealInfoOne image {
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 10rpx;
+}
+.dealInfoTwo {
+    display: flex;
+    margin-top: 32rpx;
+    font-size: 28rpx;
+    color: #333333;
+    justify-content: center;
+    align-items: flex-end;
+}
+.redBigText {
+    display: block;
+    margin-right: 16rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #E90909;
+}
+.dealInfoThree {
+    display: block;
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    color: #666666;
+}
+
+.storeHandle {
+    display: flex;
+    width: 100%;
+    height: 246rpx;
+    background: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+}
+.everyHandle {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.everyHandle image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto;
+    border-radius: 2rpx dashed #666666;
+}
+.everyHandle text {
+    display: block;
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.version {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99;
+}
+.versionElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 604rpx;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10rpx;
+    transform: translateX(-50%) translateY(-50%);
+}
+.tips {
+    display: block;
+    width: 484rpx;
+    margin: 0 auto;
+    margin-top: 34rpx;
+    font-size: 38rpx;
+    color: #333333;
+    text-align: center;
+}
+.tipsText {
+    display: block;
+    width: 484rpx;
+    margin: 0 auto;
+    margin-top: 18rpx;
+    font-size: 30rpx;
+    color: #999999;
+    text-align: center;
+}
+.tipsBtn {
+    display: block;
+    width: 100%;
+    height: 96rpx;
+    margin-top: 18rpx;
+    border-top: 1px solid #ebebeb;
+    line-height: 96rpx;
+    font-size: 40rpx;
+    color: #4ECA33;
+    text-align: center;
+}

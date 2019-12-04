@@ -1,0 +1,71 @@
+/**pages/sellerBasic/msg/index**/
+@import '/template/tabbar/tabbar.wxss';
+
+.msgList {
+    width: 100%;
+}
+.everyMsg {
+    display: flex;
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+}
+.lowerImg {
+    position: relative;
+    width: 112rpx;
+    height: 112rpx;
+}
+.lowerImg image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}
+.lowerImg text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28rpx;
+    background: rgba(0, 0, 0, .5);
+    border-bottom-left-radius: 10rpx;
+    border-bottom-right-radius: 10rpx;
+    line-height: 28rpx;
+    font-size: 20rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.everyMsgInfo {
+    width: 410rpx;
+}
+.everyMsgName {
+    display: block;
+    line-height: 44rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.everyMsgContent {
+    overflow: hidden;
+    display: block;
+    margin-top: 8rpx;
+    line-height: 34rpx;
+    font-size: 24rpx;
+    color: #999999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.everyMsgTime {
+    display: block;
+    margin-top: 10rpx;
+    line-height: 24rpx;
+    font-size: 20rpx;
+    color: #666666;
+}
+.wareImg {
+    display: block;
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 10rpx;
+}

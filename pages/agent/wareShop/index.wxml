@@ -1,0 +1,122 @@
+<!--pages/agent/wareShop/index-->
+<view class="container" style="{{isIphoneX ? 'margin-bottom: 224rpx;' : 'margin-bottom: 156rpx;'}}">
+    <view class="storeInfo">
+        <view class="imgInfo" bindtap="goEditStore">
+            <image src="{{storeInfo.logo}}"></image>
+        </view>
+
+        <view class="storeDataInfo">
+            <view>
+                <text class="storeName">{{storeInfo.shop_name}}</text>
+
+                <view class="storeData">
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/commentNum.png"></image>综合评价:123分
+                    </view>
+
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/buyerNum.png"></image>粉丝数:{{storeInfo.user_count}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="classify" bindtap="goClassify">
+        <text>{{classify ? classify.name : '全部商品'}}</text>
+
+        <view class="classifyElement">
+            <text>分类</text>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="screenWare">
+        <view class="everyScreen" wx:for="{{screenList}}" wx:key="{{index}}" data-index="{{index}}" data-type="{{item.type}}" bindtap="changeScreen">
+            <text>{{item.text}}</text>
+
+            <view class="everyScreenState" wx:if="{{item.state == 0}}">
+                <image src="/resources/imgs/upArrow.png"></image>
+
+                <image src="/resources/imgs/downArrow.png"></image>
+            </view>
+
+            <view class="everyScreenState" wx:if="{{item.state == 1}}">
+                <image src="/resources/imgs/upArrowActive.png"></image>
+
+                <image src="/resources/imgs/downArrow.png"></image>
+            </view>
+
+            <view class="everyScreenState" wx:if="{{item.state == 2}}">
+                <image src="/resources/imgs/upArrow.png"></image>
+
+                <image src="/resources/imgs/downArrowActive.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="wareListElement">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="selectThis">
+            <view class="everyWareInfo">
+                <view class="everySelect">
+                    <image class="radio" src="/resources/imgs/radio.png" wx:if="{{!item.checked}}"></image>
+
+                    <image class="radioActive" src="/resources/imgs/radioActive.png" wx:if="{{item.checked}}"></image>
+                </view>
+
+                <image src="{{item.thumb}}"></image>
+
+                <view class="everyDescribe">
+                    <text class="everyTitle">{{item.title}}</text>
+
+                    <view class="everyPrice">
+                        <text>￥{{item.supplier}}</text>
+                        
+                        <text>(含税费:¥{{item.taxes}} 运费:¥{{item.freight}})</text>
+                    </view>
+
+                    <view class="everyOtherInfo">
+                        <view class="everyCountry">
+                            <image src="{{item.type_thumb}}"></image>
+
+                            <text>{{item.type_name}}</text>
+                        </view>
+
+                        <text>库存：{{item.inventory}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+
+    <view class="wareSelectElement {{isIphoneX ? 'fix-iphonex-button' : ''}}">
+        <view class="selectAll" bindtap="changeAllSelect">
+            <image class="radio" src="/resources/imgs/radio.png" wx:if="{{!allSelect}}"></image>
+
+            <image class="radioActive" src="/resources/imgs/radioActive.png" wx:else></image>
+
+            <text>全选</text>
+
+            <text>共{{allWareNum}}件商品</text>
+        </view>
+
+        <text bindtap="publishWare">确认发售</text>
+    </view>
+
+    <view class="wareSuccessModel" wx:if="{{showSuccessModel}}">
+        <view class="wareSuccessBox">
+            <text>恭喜商品发售成功！</text>
+
+            <view class="successText">
+                发售商品价格是供货价，售价需在“
+                <text bindtap="goMyWare">我的宝贝</text>
+                ”里修改商品价格
+            </view>
+
+            <text bindtap="hideSuccessMode">好的</text>
+        </view>
+    </view>
+</view>

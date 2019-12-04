@@ -1,0 +1,83 @@
+<!--pages/agent/wareCencus/index-->
+<view class="container" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+    <view class="wareCencusNum">
+        <text>累计总销量</text>
+          
+        <view>
+            <text>{{allSales}}</text>
+            
+            <text>件</text>
+        </view>
+    </view>
+
+    <view class="wareCencusSearch">
+        <input id="cencusSearch" class="cencusSearch" type="text" value="{{searchText}}" confirm-type="" bindfocus="getFocus" bindblur="getBlur" bindinput="saveInput" bindconfirm="search" />
+
+        <label class="cencusSearchLabel" for="cencusSearch" wx:if="{{showInputLabel}}">
+            <image src="/resources/imgs/search.png"></image>
+
+            <text>搜索商品名称</text>
+        </label>
+    </view>
+
+    <view class="wareTime">
+        <text>时间选择</text>
+
+        <view class="timeOptions">
+            <picker>
+                <text>2019.01.20-2019.05.20</text>
+            </picker>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="wareCencusNowNum">
+        <text>当前累计销售商品</text>
+          
+        <view>
+            <text>562</text>
+            
+            <text>件</text>
+        </view>
+    </view>
+
+    <view class="dateListElement">
+        <view class="everyDate" wx:for="{{wareList}}" wx:key="{{index}}">
+            <view class="everyDateInfo">
+                <text>{{item.date}}</text>
+
+                <text>销售{{item.dateNum}}件</text>
+            </view>
+
+            <view class="everyDateWare" wx:for="{{wareList}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}">
+                <view class="everyWareInfo">
+                    <image src="{{items.thumb}}"></image>
+
+                    <view class="everyDescribe">
+                        <text class="everyTitle">{{items.title}}</text>
+
+                        <view class="everyPrice">
+                            <text>￥{{items.supplier}}</text>
+                            
+                            <text>(含税费:¥{{item.taxes}} 运费:¥{{item.freight}})</text>
+                        </view>
+
+                        <view class="everyCountry">
+                            <image src="{{item.country_flag}}"></image>
+
+                            <text>{{item.country_name}}</text>
+                        </view>
+
+                    </view>
+                </view>
+
+                <view class="everyNum">
+                    <text>销售{{items.sales}}件</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+</view>

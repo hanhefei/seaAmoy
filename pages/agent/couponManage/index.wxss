@@ -1,0 +1,160 @@
+/**pages/agent/couponManage/index**/
+page {
+    background: #ffffff;
+}
+
+.couponPublishElement {
+    width: 690rpx;
+    padding: 30rpx 30rpx 40rpx 30rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+}
+.couponPublishElement > text {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.couponDetails {
+    width: 100%;
+}
+.everyCouponInfo {
+    display: flex;
+    width: 646rpx;
+    height: 76rpx;
+    margin-top: 30rpx;
+    padding: 0 20rpx;
+    border: 2rpx solid #DBDBDB;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyCouponInfo:nth-child(1) input {
+    width: 420rpx;
+}
+.everyCouponInfo:nth-child(2) input {
+    width: 260rpx;
+}
+.everyCouponInfo text {
+    display: block;
+    margin-right: 20rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.couponDetails > text {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin-top: 40rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.couponTime {
+    display: flex;
+    width: 360rpx;
+    justify-content:space-between;
+    align-items: center;
+}
+.couponTime text {
+    margin-right: 0;
+    font-size: 28rpx;
+}
+
+.couponListElement {
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.couponListElement > text {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.couponList {
+    display: flex;
+    margin-top: 12rpx;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.everyCoupon {
+    position: relative;
+    display: flex;
+    width: 316rpx;
+    height: 136rpx;
+    margin-bottom: 48rpx;
+    border: 2rpx solid #CB3433;
+    justify-content: space-between;
+}
+.couponLeft {
+    width: 160rpx;
+    margin-top: 8rpx;
+    margin-left: 10rpx;
+}
+.leftTop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+.leftTop text {
+    display: block;
+    line-height: 82rpx;
+    font-size: 52rpx;
+    font-weight: bold;
+    color: #333333;
+}
+.leftTop text:first-child {
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+}
+.couponLeft > text {
+    display: block;
+    width: 160rpx;
+    margin-top: 6rpx;
+    font-size: 20rpx;
+    color: #0B0B0B;
+    white-space: nowrap;
+}
+.couponRight {
+    margin-right: 10rpx;
+}
+.couponRight text:first-child {
+    display: block;
+    margin-top: 36rpx;
+    font-size: 22rpx;
+    color: #333333;
+}
+.couponRight text:last-child {
+    display: block;
+    width: 136rpx;
+    /* height: 36rpx; */
+    margin-top: 16rpx;
+    background: #CD3233;
+    line-height: 36rpx;
+    font-size: 20rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.everyIcon {
+    position: absolute;
+    top: 6rpx;
+    right: 10rpx;
+    display: block;
+    width: 52rpx;
+    height: 22rpx;
+}
+.delThis {
+    position: absolute;
+    top: -18rpx;
+    right: -18rpx;
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+}

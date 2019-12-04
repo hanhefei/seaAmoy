@@ -1,0 +1,460 @@
+/**pages/sellerBasic/myWare/details**/
+.carousel {
+    display: block;
+    width: 100%;
+    height: 600rpx;
+}
+.carousel image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.detailsElementOne {
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.elementOneChildOne {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.elementOneChildOne view {
+    display: flex;
+    margin-right: 10rpx;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.elementOneChildOne view text {
+    display: block;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.elementOneChildOne view text:first-child {
+    padding-bottom: 10rpx;
+}
+.elementOneChildOne view text:last-child {
+    font-size: 48rpx;
+}
+.elementOneChildOne > text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+.elementOneChildTwo {
+    display: block;
+    margin-top: 6rpx;
+    font-size: 24rpx;
+    color: #C4C4C4;
+    text-decoration: line-through;
+}
+.elementOneChildThree {
+    display: block;
+    margin-top: 18rpx;
+    line-height: 44rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333333;
+}
+.elementOneChildFour {
+    display: flex;
+    margin-top: 16rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.elementOneChildFour text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+.elementOneChildFour text:first-child {
+    margin-right: 20rpx;
+}
+.elementOneChildFive {
+    display: flex;
+    margin-top: 16rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailsCommentNum {
+    display: flex;
+}
+.detailsCommentNum text:nth-child(1) {
+    display: block;
+    margin-right: 10rpx;
+    font-size: 24rpx;
+    color: #666666;
+}
+.commentStars {
+    display: flex;
+    margin-right: 10rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.commentStars image {
+    display: block;
+    width: 28rpx;
+    height: 28rpx;
+}
+.detailsCommentNum text:nth-child(3) {
+    display: flex;
+    font-size: 20rpx;
+    color: #FF461B;
+    align-items: center;
+}
+.detailsCountry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsCountry image {
+    display: block;
+    width: 46rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.detailsCountry text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+
+.detailsElementTwo {
+    display: block;
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #666666;
+}
+
+.detailsSku {
+    display: flex;
+    width: 690rpx;
+    height: 100rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailsSku view {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsSku view text {
+    display: block;
+    font-size: 28rpx;
+    color: #666666;
+}
+.detailsSku view text:first-child {
+    margin-right: 30rpx;
+    color: #333333;
+}
+.detailsSku image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+
+.detailsPriceInfo {
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    background: #ffffff;
+}
+.everyPriceInfo {
+    display: flex;
+    width: 690rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyPriceInfoFlexStart {
+    align-items: flex-start;
+}
+.everyPriceInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #666666;
+}
+.everyPriceInfo text:first-child {
+    margin-right: 60rpx;
+    color: #333333;
+}
+.everyPriceInfo text:last-child {
+    width: 570rpx;
+}
+
+.detailsCommentElement {
+    width: 720rpx;
+    margin-bottom: 16rpx;
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    background: #ffffff;
+}
+.detailsComment {
+    /* width: 690rpx; */
+    /* padding-right: 30rpx; */
+}
+.detailsCommentTitle {
+    display: flex;
+    width: 690rpx;
+    padding-right: 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailsCommentTitle > text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.detailsCommentTitleHandle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsCommentTitleHandle text {
+    display: block;
+    margin-right: 10rpx;
+    font-size: 28rpx;
+    color: #EA2243;
+}
+.detailsCommentTitleHandle image {
+    display: block;
+    width: 12rpx;
+    height: 22rpx;
+}
+.detailsCommentType {
+    display: flex;
+    width: 690rpx;
+    margin-top: 20rpx;
+    padding-right: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsCommentType text {
+    display: block;
+    height: 50rpx;
+    margin-right: 30rpx;
+    padding: 0 20rpx;
+    background: #FFE1E6;
+    border-radius: 26rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    color: #333333;
+}
+.commentList {
+    width: 100%;
+}
+.everyComment {
+    width: 690rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.everyComment:last-child {
+    border-bottom: 0;
+}
+.everyCommentInfo {
+    display: flex;
+    margin-top: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyCommentInfo image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+    margin-right: 30rpx;
+}
+.everyCommentInfo text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+.everyContent {
+    overflow: hidden;
+    display: -webkit-box;
+    margin-top: 10rpx;
+    margin-bottom: 30rpx;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.detailsInfo {
+    width: 100%;
+    background: #ffffff;
+}
+.detailsInfoTitle {
+    display: flex;
+    width: 100%;
+    height: 104rpx;
+    background: #F9F9F9;
+    justify-content: center;
+    align-items: center;
+}
+.detailsInfoTitle text {
+    display: block;
+}
+.detailsInfoTitle text:nth-child(1) {
+    width: 100rpx;
+    height: 4rpx;
+    margin-right: 20rpx;
+    background: #F0F0F0;
+}
+.detailsInfoTitle text:nth-child(2) {
+    font-size: 32rpx;
+    color: #666666;
+}
+.detailsInfoTitle text:nth-child(3) {
+    width: 100rpx;
+    height: 4rpx;
+    margin-left: 20rpx;
+    background: #F0F0F0;
+}
+.detailsDescribe {
+    overflow: hidden;
+    padding-bottom: 30rpx;
+}
+.detailsDescribe image {
+    display: block;
+    width: 100%;
+    height: 600rpx;
+    margin-top: 30rpx;
+}
+.detailsDescribe text {
+    display: block;
+    width: 690rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #666666;
+}
+
+.wareSku {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.skuBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.wareSkuInfo {
+    position: relative;
+    /* display: flex; */
+    width: 690rpx;
+    height: 122rpx;
+    padding: 20rpx 30rpx;
+    border-bottom: 2rpx solid #CCCCCC;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.wareSkuInfo image {
+    position: absolute;
+    bottom: 20rpx;
+    display: block;
+    width: 240rpx;
+    height: 240rpx;
+    margin-right: 20rpx;
+    border-radius: 12rpx;
+}
+.wareInfoElement {
+    position: absolute;
+    right: 30rpx;
+    bottom: 20rpx;
+    width: 430rpx;
+}
+.wareInfoTop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wareInfoTop text {
+    display: block;
+    width: 116rpx;
+    height: 31rpx;
+    border: 2rpx solid #EA2243;
+    border-radius: 18rpx;
+    line-height: 31rpx;
+    font-size: 22rpx;
+    color: #EA2243;
+    text-align: center;
+}
+.wareInfoTop text:first-child {
+    width: auto;
+    height: auto;
+    margin-right: 30rpx;
+    border: 0;
+    line-height: auto;
+    font-size: 36rpx;
+    color: #EA2243;
+}
+.wareInfoTop text:last-child {
+    margin-left: 14rpx;
+}
+.wareInfoBottom {
+    display: flex;
+    margin-top: 27rpx;
+    color: #666666;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wareInfoBottom text:first-child {
+    margin-right: 40rpx;
+    font-size: 24rpx;
+}
+.wareSkuElement {
+    width: 690rpx;
+    padding: 30rpx;
+    padding-bottom: 158rpx;
+}
+.wareSkuElement > text {
+    display: block;
+    margin-bottom: 30rpx;
+    font-size: 30rpx;
+    color: #333333;
+}
+.skuList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everySku {
+    display: inline-block;
+    width: 156rpx;
+    height: 66rpx;
+    margin-right: 16rpx;
+    margin-bottom: 16rpx;
+    background: #F4F5F9;
+    border: 2rpx solid #F4F5F9;
+    border-radius: 8rpx;
+    line-height: 66rpx;
+    font-size: 24rpx;
+    color: #666666;
+    text-align: center;
+}
+.skuActive {
+    background: #ffffff;
+    border: 2rpx solid #EA2243;
+    color: #EA2243;
+}

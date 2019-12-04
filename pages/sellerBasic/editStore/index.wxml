@@ -1,0 +1,104 @@
+<!--pages/sellerBasic/editStore/index-->
+<!-- 大B -->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="everyInfo">
+        <view class="storeElement storeLogo" bindtap="editStoreImg">
+            <text>店铺LOGO</text>
+
+            <view class="storeLogoInfo">
+                <image src="{{storeImg ? storeImg : manufactorEditInfo.data.logo}}"></image>
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeElement storeName">
+            <text>店铺名称</text>
+
+            <view class="storeNameInfo">
+                <input type="text" value="{{storeName ? storeName : manufactorEditInfo.shop_name}}" placeholder="请输入店铺名称"  data-variable="storeName" bindblur="saveInput" />
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeElement storeClassify">
+            <text>主营类目</text>
+
+            <view class="storeClassifyInfo">
+                <input type="text" value="{{storeClassify ? storeClassify : manufactorEditInfo.category}}" placeholder="请输入主营类目"  data-variable="storeClassify" bindblur="saveInput" />
+                
+                <!-- <text>{{manufactorEditInfo.category}}</text> -->
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeElement storeCountry">
+            <text>主营国家</text>
+
+            <view class="storeCountryInfo">
+                <input type="text" value="{{storeCoutry ? storeCoutry : manufactorEditInfo.country}}" placeholder="请输入主营国家"  data-variable="storeCoutry" bindblur="saveInput" />
+
+                <!-- <text>{{manufactorEditInfo.country}}</text> -->
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeElement storePhone">
+            <text>客服电话</text>
+
+            <view class="storePhoneInfo">
+                <input type="number" value="{{storePhone ? storePhone : manufactorEditInfo.customer}}" placeholder="请输入客服电话" maxlength="11" minlength="11"  data-variable="storePhone" bindblur="saveInput" />
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <text class="confirm" bindtap="editManufactorStoreInfo">确认</text>
+</view>
+
+<!-- 小B -->
+<view class="container" wx:else>
+    <view class="everyInfo">
+        <view class="storeElement storeLogo" bindtap="editAgentStoreImg">
+            <text>店铺LOGO</text>
+
+            <view class="storeLogoInfo">
+                <image src="{{agentStoreImg ? agentStoreImg : agentEditInfo.logo}}"></image>
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeElement storeName" style="margin-bottom: 0;">
+            <text>店铺名称</text>
+
+            <view class="storeNameInfo">
+                <input type="text" value="{{agentStoreName ? agentStoreName : agentEditInfo.shop_name}}" placeholder="请输入店铺名称" data-variable="agentStoreName" bindblur="saveInput" />
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+
+        <view class="storeWareTypeCountry">
+            <text>主营类目：{{agentEditInfo.category}}</text>
+
+            <text>主营国家：{{agentEditInfo.country}}</text>
+        </view>
+
+        <view class="storeElement storePhone">
+            <text>客服电话</text>
+
+            <view class="storePhoneInfo">
+                <input type="text" value="{{agentStorePhone ? agentStorePhone : agentEditInfo.customer}}" placeholder="请输入客服电话" maxlength="11" minlength="11"  data-variable="agentStorePhone" bindblur="saveInput" />
+
+                <image src="/resources/imgs/select.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <text class="confirm" bindtap="editAgentStoreInfo">确认</text>
+</view>

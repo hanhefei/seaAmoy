@@ -1,0 +1,62 @@
+/**pages/sellerBasic/myWare/allComment**/
+page {
+    background: #ffffff;
+}
+.allCommentElement {
+    width: 720rpx;
+    margin-bottom: 16rpx;
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    background: #ffffff;
+}
+.allCommentType {
+    display: flex;
+    width: 690rpx;
+    padding-right: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.allCommentType text {
+    display: block;
+    height: 46rpx;
+    margin-right: 30rpx;
+    padding: 0 20rpx;
+    border: 2rpx solid #D0D0D0;
+    border-radius: 26rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    color: #333333;
+}
+.commentList {
+    width: 100%;
+}
+.everyComment {
+    width: 690rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.everyCommentInfo {
+    display: flex;
+    margin-top: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyCommentInfo image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+    margin-right: 30rpx;
+}
+.everyCommentInfo text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+.everyContent {
+    display: block;
+    margin-top: 10rpx;
+    margin-bottom: 30rpx;
+    font-size: 28rpx;
+    color: #333333;
+}

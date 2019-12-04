@@ -1,0 +1,22 @@
+<!--pages/sellerBasic/mySales/carrySales-->
+<view class="container">
+    <view class="carrySales">
+        <view class="carrySalesTitle">
+            <text>提现金额</text>
+            <text>（手续费10%）</text>
+        </view>
+
+        <view class="carrySalesInput">
+            <text>¥</text>
+
+            <input type="number" />
+        </view>
+
+        <view class="carrySalesAllBtn">
+            <text>可提现金额¥108.38，</text>
+            <text>全部提现</text>
+        </view>
+
+        <text class="carrySalesBtn">提现</text>
+    </view>
+</view>

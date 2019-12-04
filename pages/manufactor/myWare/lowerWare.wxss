@@ -1,0 +1,132 @@
+/**pages/manufactor/myWare/lowerWare**/
+.wareInfo {
+    width: 690rpx;
+    padding: 30rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+}
+.wareInfo > text {
+    display: block;
+    margin-bottom: 20rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.nowWareInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.nowWareInfo > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.wareDescribe {
+    width: 500rpx;
+}
+.wareTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: 88rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.warePrice {
+    display: flex;
+    margin-top: 4rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.wareDescInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wareDescInfo text {
+    display: block;
+    font-size: 22rpx;
+    color: #999999;
+}
+.wareDescInfo text:first-child {
+    margin-right: 20rpx;
+}
+.nowPrice {
+    display: block;
+    margin-right: 20rpx;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.wareOtherInfo {
+    display: flex;
+    margin-top: 4rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.countryInfo {
+    display: flex;
+    margin-right: 32rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.countryInfo image {
+    display: block;
+    width: 46rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.countryInfo text {
+    display: block;
+    font-size: 24rpx;
+    color: #666666;
+}
+.otherInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.otherInfo text {
+    display: block;
+    font-size: 22rpx;
+    color: #999999;
+}
+.otherInfo text:first-child {
+    margin-right: 30rpx;
+}
+
+.lowerInfo {
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.lowerInfo text {
+    display: block;
+    margin-bottom: 20rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.lowerInfo textarea {
+    display: block;
+    width: 646rpx;
+    height: 172rpx;
+    padding: 20rpx;
+    border: 2rpx solid #DDDDDD;
+    font-size: 28rpx;
+}
+
+.confirm {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 60rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}

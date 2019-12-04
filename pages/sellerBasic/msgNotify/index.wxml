@@ -1,0 +1,20 @@
+<!-- pages/sellerBasic/msgNotify/index -->
+<import src="../../../wxParse/wxParse.wxml"/>
+
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 68rpx' : ''}}">
+    <view class="notifyList">
+        <view class="everyNotify" wx:for="{{notifyList}}" wx:key="{{index}}">
+            <view class="notifyTime">
+                <text>{{item.create_time}}</text>
+
+                <!-- <text>{{item.time}}</text> -->
+            </view>
+
+            <view class="notifyMsg">
+                <text>{{item.title}}</text>
+                
+                <template is="wxParse" data="{{wxParseData: articleList[index]}}"/>
+            </view>
+        </view>
+    </view>
+</view>

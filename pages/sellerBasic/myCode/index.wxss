@@ -1,0 +1,96 @@
+/**pages/sellerBasic/myCode/index**/
+page {
+    background: #ffffff;
+}
+
+.myInfo {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+    justify-content: flex-start;
+    align-items: center;
+}
+.myInfo image {
+    display: block;
+    width: 96rpx;
+    height: 96rpx;
+    margin-right: 20rpx;
+    border-radius: 16rpx;
+}
+.textInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.textInfo text:last-child {
+    margin-top: 8rpx;
+    font-size: 24rpx;
+    color: #666666;
+}
+
+.myCodeInfo {
+    width: 100%;
+    background: #ffffff;
+}
+.codeTextOne {
+    display: block;
+    margin-top: 80rpx;
+    font-size: 40rpx;
+    color: #333333;
+    text-align: center;
+}
+.codeImg {
+    display: block;
+    width: 516rpx;
+    height: 516rpx;
+    margin: 0 auto;
+    margin-top: 60rpx;
+}
+.codeHandle {
+    display: flex;
+    width: 690rpx;
+    margin-top: 60rpx;
+    padding: 0 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.codeHandleBtn {
+    display: flex;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 60rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.codeHandle text {
+    display: block;
+    width: 330rpx;
+    height: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.codeTextTwo {
+    display: flex;
+    margin-top: 60rpx;
+    justify-content: center;
+    align-items: flex-start;
+}
+.codeTextTwo text {
+    display: block;
+    line-height: 34rpx;
+    font-size: 24rpx;
+    color: #999999;
+}

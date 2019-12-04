@@ -1,0 +1,40 @@
+<!--pages/manufactor/myWare/lowerWare-->
+<view class="container">
+    <view class="wareInfo">
+        <text>下架商品：</text>
+
+        <view class="nowWareInfo">
+            <image src="{{lowerWareInfo.thumb}}"></image>
+
+            <view class="wareDescribe">
+                <text class="wareTitle">{{lowerWareInfo.title}}</text>
+                
+                <view class="warePrice">
+                    <view class="wareDescInfo">
+                        <text>已售:{{lowerWareInfo.sales}}</text>
+
+                        <text>库存:{{lowerWareInfo.inventory}}</text>
+                    </view>
+
+                    <text class="nowPrice">￥{{lowerWareInfo.supplier}}</text>
+                </view>
+
+                <view class="wareOtherInfo">
+                    <view class="countryInfo">
+                        <image src="{{lowerWareInfo.country_flag}}"></image>
+
+                        <text>{{lowerWareInfo.country_name}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="lowerInfo">
+        <text>下架原因：</text>
+        
+        <textarea value="{{lowerContent}}" placeholder-style="color: #999999;" disabled="true"></textarea>
+    </view>
+    
+    <!-- <text class="confirm">确认</text> -->
+</view>

@@ -1,0 +1,162 @@
+<!--pages/sellerBasic/my/index-->
+<import src="/template/tabbar/tabbar.wxml"/>
+
+<!-- 大B -->
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 96rpx;'}}" wx:if="{{stateType == 2}}">
+    <view class="storeInfo">
+        <image class="imgInfo" src="{{storeInfo.find.logo}}"></image>
+
+        <view class="storeDataInfo">
+            <view>
+                <text class="storeName">{{storeInfo.find.shop_name}}</text>
+
+                <view class="storeData">
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/commentNum.png"></image>综合评价:22分
+                    </view>
+
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/buyerNum.png"></image>粉丝数:{{storeInfo.fan}}
+                    </view>
+                </view>
+            </view>
+
+            <text class="storeBorder"></text>
+        </view>
+
+        <text class="storeWareNum">共{{storeInfo.goods_count}}件商品</text>
+    </view>
+
+    <view class="myHandleList">
+        <view class="everyHandle" bindtap="goMySales">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle1.png"></image>
+
+                <text>我的销售额</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyWare">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle2.png"></image>
+
+                <text>我的商品</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyLower">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle3.png"></image>
+
+                <text>我的代理商</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyCode">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle4.png"></image>
+
+                <text>我的二维码</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <button class="everyHandle" open-type="getUserInfo" bindgetuserinfo="bindWechat" style="padding-right: 0;" wx:if="{{!openid}}">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle6.png"></image>
+
+                <text>微信绑定</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </button>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 96rpx;'}}" wx:else>
+    <view class="storeInfo">
+        <image class="imgInfo" src="{{storeInfo.logo}}"></image>
+
+        <view class="storeDataInfo">
+            <view>
+                <text class="storeName">{{storeInfo.shop_name}}</text>
+
+                <view class="storeData">
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/commentNum.png"></image>综合评价:123分
+                    </view>
+
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/buyerNum.png"></image>粉丝数:5666
+                    </view>
+                </view>
+            </view>
+
+            <text class="storeBorder"></text>
+        </view>
+
+        <text class="storeWareNum">共125件商品</text>
+    </view>
+
+    <view class="myHandleList">
+        <view class="everyHandle" bindtap="goMySales">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle1.png"></image>
+
+                <text>我的销售额</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyWare">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle2.png"></image>
+
+                <text>我的商品</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyLower">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle3.png"></image>
+
+                <text>我的粉丝</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goCouponManage">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle5.png"></image>
+
+                <text>优惠券发布</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+
+        <view class="everyHandle" bindtap="goMyCode">
+            <view class="handle">
+                <image src="/resources/imgs/myHandle4.png"></image>
+
+                <text>我的二维码</text>
+            </view>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+</view>
+
+<template is="tabbar" data="{{tabbarList, tabbarIndex, isIphoneX}}"></template>

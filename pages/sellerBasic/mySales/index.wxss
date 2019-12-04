@@ -1,0 +1,68 @@
+/**pages/sellerBasic/mySales/index**/
+.mySales {
+    display: flex;
+    width: 100%;
+    height: 478rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.saleTextOne {
+    display: flex;
+    margin-top: 98rpx;
+    justify-content: center;
+    align-items: flex-end;
+}
+.saleTextOne text:first-child {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.saleTextOne text:last-child {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+}
+.salesNum {
+    display: flex;
+    margin-top: 60rpx;
+    font-size: 72rpx;
+    color: #333333;
+    justify-content: center;
+}
+.saleTextTwo {
+    display: flex;
+    margin-top: 30rpx;
+    margin-bottom: 100rpx;
+    font-size: 28rpx;
+    color: #666666;
+    justify-content: center;
+}
+
+.salesHandle {
+    display: flex;
+    width: 690rpx;
+    height: 104rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.handleText {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.handleBtn {
+    display: block;
+    width: 120rpx;
+    height: 52rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}

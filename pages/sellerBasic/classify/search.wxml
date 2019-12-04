@@ -1,0 +1,56 @@
+<!--pages/sellerBasic/classify/search-->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="searchElement">
+        <!-- <input class="searchInput" type="text" placeholder="请输入搜索内容" placeholder-style="color: #CBCBCB;" confirm-type="search" bindconfirm="saveInput" /> -->
+
+        <input class="searchInput" type="text" placeholder="请输入搜索内容" placeholder-style="color: #CBCBCB;" bindblur="saveInput" />
+
+        <text class="searchBtn" bindtap="getManufactorSearchList">搜索</text>
+    </view>
+
+    <!-- <view class="hasClassify" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}"> -->
+    <view class="hasClassify" style="display: {{searchList.length > 0 ? 'flex' : 'none'}}">
+        <view class="everyClassify" style="{{(index + 1) % 4 == 0 ? 'margin-right: 0;' : ''}}" wx:for="{{searchList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="selectThisType">
+            <image src="{{item.thumb}}"></image>
+
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+
+    <!-- 没有搜索时 -->
+    <view class="noClassify" style="display: {{searchList.length <= 0 ? 'block' : 'none'}}">
+        <image src="/resources/imgs/noSearch.png"></image>
+
+        <text>请输入搜索内容</text>
+    </view>
+
+    <!-- <view class="{{isIphoneX ? 'fix-iphonex-button' : ''}}"></view> -->
+</view>
+
+<view class="container" wx:else>
+    <view class="searchElement">
+        <!-- <input class="searchInput" type="text" placeholder="请输入搜索内容" placeholder-style="color: #CBCBCB;" confirm-type="search" bindconfirm="saveInput" /> -->
+
+        <input class="searchInput" type="text" placeholder="请输入搜索内容" placeholder-style="color: #CBCBCB;" bindblur="saveInput" />
+
+        <text class="searchBtn" bindtap="getAgentSearchList">搜索</text>
+    </view>
+
+    <!-- <view class="hasClassify" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}"> -->
+    <view class="hasClassify" style="display: {{searchList.length > 0 ? 'flex' : 'none'}}">
+        <view class="everyClassify" style="{{(index + 1) % 4 == 0 ? 'margin-right: 0;' : ''}}" wx:for="{{searchList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="selectThisType">
+            <image src="{{item.thumb}}"></image>
+
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+
+    <!-- 没有搜索时 -->
+    <view class="noClassify" style="display: {{searchList.length <= 0 ? 'block' : 'none'}}">
+        <image src="/resources/imgs/noSearch.png"></image>
+
+        <text>请输入搜索内容</text>
+    </view>
+
+    <!-- <view class="{{isIphoneX ? 'fix-iphonex-button' : ''}}"></view> -->
+</view>

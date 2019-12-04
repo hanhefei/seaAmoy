@@ -1,0 +1,63 @@
+/**app.wxss**/
+@import './resources/css/weui.wxss';
+
+page {
+    background: #F2F2F2;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+button {
+    position: static;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    text-align: center;
+    text-decoration: none;
+    line-height: auto;
+    border-radius: 0;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #000000;
+    background-color: transparent;
+}
+button::after{
+    width: 0;
+    height: 0;
+    border: none;
+}
+.button-hover {
+    color: #000000;
+    background-color: transparent;
+}
+
+
+/* iphoneX */
+.fix-iphonex-button {
+    bottom:68rpx!important;
+}
+.fix-iphonex-button::after {
+    content: ' ';
+    position: fixed;
+    left: 0;
+    bottom: 0!important;
+    height: 68rpx!important;
+    width: 100%;
+    background: rgb(250,250,250);
+} 
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

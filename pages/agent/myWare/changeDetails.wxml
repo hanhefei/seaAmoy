@@ -1,0 +1,57 @@
+<!--pages/agent/myWare/changeDetails-->
+<view class="container" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : 'margin-bottom: 0;'}}">
+    <view class="wareInfo">
+        <text>修改商品：</text>
+
+        <view class="nowWareInfo">
+            <image src="{{wareInfo.thumb}}"></image>
+
+            <view class="wareDescribe">
+                <text class="wareTitle">{{wareInfo.title}}</text>
+                
+                <view class="warePrice">
+                    <view class="wareDescInfo">
+                        <text>已售:{{wareInfo.sales}}</text>
+
+                        <text>库存:{{wareInfo.sales}}</text>
+                    </view>
+
+                    <text class="nowPrice">￥{{wareInfo.supplier}}</text>
+                </view>
+
+                <view class="wareOtherInfo">
+                    <view class="countryInfo">
+                        <image src="{{wareInfo.country_flag}}"></image>
+
+                        <text>{{wareInfo.country_name}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="warePriceInfo">
+        <view class="everySku" wx:for="{{wareSku}}" wx:key="{{index}}">
+            <view class="everySkuName">
+                <text>规格</text>
+
+                <text>{{item.name}}</text>
+            
+            </view>
+
+            <view class="oldPrice">
+                <text>原始价格</text>
+                
+                <input type="number" value="¥{{item.price}}" disabled="true" />
+            </view>
+
+            <view class="newPrice">
+                <text>修改价格</text>
+                
+                <input type="number" maxlength="6" data-index="{{index}}" bindinput="changeThisSkuPrice" />
+            </view>
+        </view>
+    </view>
+
+    <text class="confirm" bindtap="editSku">确认</text>
+</view>

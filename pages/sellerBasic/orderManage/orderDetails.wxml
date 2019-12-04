@@ -1,0 +1,48 @@
+<!--pages/sellerBasic/orderManage/orderDetails-->
+<view class="container">
+    <view class="orderElement" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+        <view class="orderInfo">
+            <image src="/resources/imgs/storeImg.png"></image>
+
+            <view class="orderDescribe">
+                <text class="orderTitle">旗舰店 卡西欧（CASIO）手表商务防水男士石英表MTP-1375旗舰店 卡西欧（CASIO）手表商务防水男士石英表MTP-1375</text>
+
+                <text class="orderModel">MTP-1375</text>
+
+                <view class="orderPriceInfo">
+                    <view class="orderPrice">
+                        <text>￥560</text>
+
+                        <text>(含税费:¥36.00 运费:¥45.00)</text>
+                    </view>
+
+                    <text>x1</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="expressElement">
+        <view class="expressName">
+            <image src="/resources/imgs/wechat.png"></image>
+
+            <view class="expressNameInfo">
+                <text>顺丰速递</text>
+
+                <view class="expressPhone">
+                    <text>官方电话</text>
+                    
+                    <text>95338</text>
+
+                    <image src="/resources/imgs/select.png"></image>
+                </view>
+            </view>
+        </view>
+
+        <view class="expressCode">
+            <text>顺丰速递</text>
+
+            <text>75150950650210</text>
+        </view>
+    </view>
+</view>

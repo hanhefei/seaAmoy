@@ -1,0 +1,103 @@
+<!--pages/manufactor/wareCencus/details-->
+<view class="container" wx:if="{{where == 'wareDetails'}}">
+    <view class="detailsWare">
+        <image src="{{wareInfo.thumb}}"></image>
+
+        <view class="detailsDescribe">
+            <text class="detailsTitle">{{wareInfo.title}}</text>
+
+            <view class="detailsPrice">
+                <text>￥{{wareInfo.supplier}}</text>
+                
+                <text>(含税费:¥{{wareInfo.taxes}} 运费:¥{{wareInfo.freight}})</text>
+            </view>
+
+            <view class="detailsOtherInfo">
+                <view class="detailsCountry">
+                    <image src="{{wareInfo.country_flag}}"></image>
+
+                    <text>{{wareInfo.country_name}}</text>
+                </view>
+
+                <text>已售:{{wareInfo.sales}}</text>
+            </view>
+
+        </view>
+    </view>
+
+    <view class="detailsSearch">
+        <input id="cencusSearch" class="cencusSearch" type="text" value="{{searchText}}" confirm-type="" bindfocus="getFocus" bindblur="getBlur" bindinput="saveInput" bindconfirm="search" />
+
+        <label class="cencusSearchLabel" for="cencusSearch" wx:if="{{showInputLabel}}">
+            <image src="/resources/imgs/search.png"></image>
+
+            <text>搜索代理商名称</text>
+        </label>
+    </view>
+
+    <view class="agentListElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+        <view class="everyAgent" wx:for="{{agentList}}" wx:key="{{index}}">
+            <view class="agentInfo">
+                <image src="{{item.imgUrl}}"></image>
+
+                <text>{{item.name}}</text>
+            </view>
+
+            <text>累计卖出{{item.num}}件</text>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+</view>
+
+<view class="container" wx:else>
+    <view class="detailsAgent">
+        <view class="detalsAgent">
+            <view class="agentInfo">
+                <image src="{{agentInfo.logo}}"></image>
+
+                <text>{{agentInfo.shop_name}}(卡西欧代理商)</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="detailsSearch">
+        <input id="cencusSearch" class="cencusSearch" type="text" value="{{searchText}}" confirm-type="" bindfocus="getFocus" bindblur="getBlur" bindinput="saveInput" bindconfirm="search" />
+
+        <label class="cencusSearchLabel" for="cencusSearch" wx:if="{{showInputLabel}}">
+            <image src="/resources/imgs/search.png"></image>
+
+            <text>搜索商品名称</text>
+        </label>
+    </view>
+
+    <view class="wareListElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}">
+            <image src="{{item.thumb}}"></image>
+
+            <view class="detailsDescribe">
+                <text class="detailsTitle">{{item.title}}</text>
+
+                <view class="detailsPrice">
+                    <text>￥{{item.supplier}}</text>
+                    
+                    <text>(含税费:¥{{item.taxes}} 运费:¥{{item.freight}})</text>
+                </view>
+
+                <view class="everyOtherInfo">
+                    <view class="detailsCountry">
+                        <image src="{{item.country_flag}}"></image>
+
+                        <text>{{item.country_name}}</text>
+                    </view>
+
+                    <text>已售:{{item.sales}}</text>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+    
+</view>

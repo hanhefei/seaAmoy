@@ -1,0 +1,47 @@
+/** pages/sellerBasic/msgNotify/index **/
+@import "../../../wxParse/wxParse.wxss";
+
+.notifyList {
+    width: 100%;
+}
+.everyNotify {
+    overflow: hidden;
+}
+.notifyTime {
+    display: flex;
+    width: 280rpx;
+    height: 40rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    background: #D1D1D1;
+    border-radius: 10rpx;
+    justify-content: center;
+    align-items: center;
+}
+.notifyTime text {
+    display: block;
+    font-size: 24rpx;
+    color: #ffffff;
+}
+.notifyTime text:first-child {
+    /* margin-right: 20rpx; */
+}
+.notifyMsg {
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.notifyMsg text:first-child {
+    display: block;
+    margin-bottom: 10rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #333333;
+}
+.notifyMsg text:last-child {
+    display: block;
+    line-height: 34rpx;
+    font-size: 24rpx;
+    color: #999999;
+}

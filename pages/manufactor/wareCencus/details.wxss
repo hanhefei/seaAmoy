@@ -1,0 +1,213 @@
+/**pages/manufactor/wareCencus/details**/
+page {
+    background: #ffffff;
+}
+
+.detailsSearch {
+    position: relative;
+    display: flex;
+    width: 690rpx;
+    height: 112rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+    justify-content: center;
+    align-items: center;
+}
+.cencusSearch {
+    display: block;
+    width: 650rpx;
+    height: 72rpx;
+    padding: 0 20rpx;
+    background: #F4F4F4;
+    border-radius: 42rpx;
+    font-size: 24rpx;
+    text-align: center;
+}
+.cencusSearchLabel {
+    position: absolute;
+    top: 20rpx;
+    left: 30rpx;
+    display: flex;
+    width: 690rpx;
+    height: 72rpx;
+    background: #F4F4F4;
+    border-radius: 42rpx;
+    justify-content: center;
+    align-items: center;
+}
+.cencusSearchLabel image {
+    display: block;
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 20rpx;
+}
+.cencusSearchLabel text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+
+.detailsWare {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+    justify-content: space-between;
+}
+.everyWare {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: space-between;
+}
+.detailsWare > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.everyWare > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.detailsDescribe {
+    width: 500rpx;
+}
+.detailsTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.detailsPrice {
+    display: flex;
+    margin-top: 2rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsPrice text {
+    display: block;
+}
+.detailsPrice text:first-child {
+    margin-right: 10rpx;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.detailsPrice text:last-child {
+    font-size: 20rpx;
+    color: #999999;
+}
+.detailsOtherInfo {
+    display: flex;
+    margin-top: 2rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyOtherInfo {
+    display: flex;
+    margin-top: 2rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailsCountry {
+    display: flex;
+    margin-right: 82rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.detailsCountry image {
+    display: block;
+    width: 46rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.detailsCountry text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+.detailsOtherInfo > text {
+    display: block;
+    font-size: 22rpx;
+    color: #999999;
+}
+.everyOtherInfo > text {
+    display: block;
+    font-size: 28rpx;
+    color: #EA2243;
+}
+
+.agentListElement {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+.detailsAgent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+}
+.everyAgent {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: space-between;
+    align-items: center;
+}
+.detalsAgent {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    margin-bottom: 16rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.agentInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.agentInfo image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 30rpx;
+    border-radius: 50%;
+}
+.agentInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.everyAgent > text {
+    display: block;
+    width: 216rpx;
+    height: 52rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.noMore {
+    display: flex;
+    width: 100%;
+    height: 80rpx;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}

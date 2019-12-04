@@ -1,0 +1,102 @@
+<!--pages/sellerBasic/myWare/index-->
+<!-- 大B -->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="classify" bindtap="goClassify">
+        <text>{{classify ? classify.name : '全部商品'}}</text>
+
+        <view class="classifyElement">
+            <text>分类</text>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="wareElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}" data-ware-id="{{item.id}}" bindtap="goDetails">
+            <view class="everyWareInfo">
+                <image src="{{item.thumb}}"></image>
+
+                <view class="everyDescribe">
+                    <text class="everyTitle">{{item.title}}</text>
+                    
+                    <view class="everyPrice">
+                        <text class="nowPrice">￥{{item.supplier}}</text>
+
+                        <text class="oldPrice">￥{{item.money}}</text>
+                    </view>
+
+                    <view class="everyOtherInfo">
+                        <view class="countryInfo">
+                            <image src="{{item.country_flag}}"></image>
+
+                            <text>{{item.country_name}}</text>
+                        </view>
+
+                        <view class="otherInfo">
+                            <text>已售:{{item.sales}}</text>
+
+                            <text>库存:{{item.inventory}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="everyHandle">
+                <text data-ware-id="{{item.id}}" catchtap="goPublish">编辑</text>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" wx:else>
+    <view class="classify">
+        <text>{{classify ? classify.name : '全部商品'}}</text>
+
+        <view class="classifyElement" bindtap="goClassify">
+            <text>分类</text>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="wareElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}" data-ware-id="{{item.id}}" bindtap="goDetails">
+            <view class="everyWareInfo">
+                <image src="{{item.thumb}}"></image>
+
+                <view class="everyDescribe">
+                    <text class="everyTitle">{{item.title}}</text>
+                    
+                    <view class="everyPrice">
+                        <text class="nowPrice">￥{{item.supplier}}</text>
+
+                        <text class="oldPrice">￥{{item.money}}</text>
+                    </view>
+
+                    <view class="everyOtherInfo">
+                        <view class="countryInfo">
+                            <image src="{{item.country_flag}}"></image>
+
+                            <text>{{item.country_name}}</text>
+                        </view>
+
+                        <view class="otherInfo">
+                            <text>已售:{{item.sales}}</text>
+
+                            <text>库存:{{item.inventory}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="everyHandle">
+                <text data-ware-id="{{item.id}}" bindtap="goChangeDetails">修改价格</text>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+</view>

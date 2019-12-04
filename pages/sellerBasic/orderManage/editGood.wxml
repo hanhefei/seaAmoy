@@ -1,0 +1,23 @@
+<!--pages/sellerBasic/orderManage/editGood-->
+<view class="container">
+    <view class="editText">
+        <text>退款原因：</text>
+
+        <textarea type="text" value="因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因因为原因" disabled="true"></textarea>
+    </view>
+
+    <text class="confirm">同意退款</text>
+
+    <text class="cancel">不同意退款</text>
+</view>
+
+<view class="container">
+    <view class="editNoText">
+        <text>不同意退款原因：</text>
+
+        <textarea type="text" placeholder="请填写不同意退款原因" placeholder-style="color: #999999;"></textarea>
+    </view>
+
+    <text class="confirm">确认</text>
+
+</view>

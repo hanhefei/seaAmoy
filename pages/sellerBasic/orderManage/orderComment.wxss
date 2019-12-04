@@ -1,0 +1,99 @@
+/**pages/sellerBasic/orderManage/orderComment**/
+.commentStars {
+    display: flex;
+    width: 690rpx;
+    height: 100rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.commentStars > text {
+    display: flex;
+    margin-right: 30rpx;
+    font-size: 28rpx;
+    color: #333333;
+    align-items: center;
+}
+.commentStarsNum {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyStar {
+    display: block;
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 10rpx;
+}
+.everyStar image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.commentStarsNum text {
+    display: block;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    color: #FF461B;
+}
+
+.commentText {
+    display: block;
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #999999;
+}
+
+.commentBtn {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 30rpx auto;
+    /* margin-top: 30rpx; */
+    /* margin-bottom: 30rpx; */
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center
+}
+
+.commentElement {
+    display: block;
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.commentElement text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.commentTextarea {
+    display: block;
+    width: 646rpx;
+    height: 172rpx;
+    margin-top: 20rpx;
+    padding: 20rpx;
+    border: 2rpx solid #333333;
+    line-height: 40rpx;
+    font-size: 28rpx;
+}
+
+.confirm {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center
+}

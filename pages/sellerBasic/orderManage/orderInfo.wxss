@@ -1,0 +1,183 @@
+/**pages/sellerBasic/orderManage/orderInfo**/
+.orderCode {
+    display: block;
+    width: 690rpx;
+    height: 100rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #333333;
+}
+
+.orderElement {
+    width: 100%;
+}
+.orderInfo {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx 30rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+    justify-content: space-between;
+}
+.orderInfo > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.orderDescribe {
+    width: 500rpx;
+}
+.orderTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.orderModel {
+    display: flex;
+    margin-top: 2rpx;
+    font-size: 22rpx;
+    color: #999999;
+    justify-content:flex-start;
+    align-items: center;
+}
+.orderModel text:first-child {
+    margin-right: 20rpx;
+}
+.orderPriceInfo {
+    display: flex;
+    margin-top: 4rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderCountry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.orderCountry image {
+    display: block;
+    width: 46rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.orderCountry text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+.orderPrice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.orderPrice > text:first-child {
+    display: block;
+    margin-right: 12rpx;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.orderPrice > text:last-child {
+    display: block;
+    font-size: 20rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+
+.orderPriceElement {
+    width: 720rpx;
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    background: #ffffff;
+}
+.orderPriceText {
+    display: block;
+    width: 690rpx;
+    height: 84rpx;
+    padding-right: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    line-height: 84rpx;
+    font-size: 24rpx;
+    color: #999999;
+}
+.orderPriceInfo {
+    display: flex;
+    width: 690rpx;
+    height: 94rpx;
+    padding-right: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.orderPriceInfo text {
+    display: block;
+    font-size: 32rpx;
+    color: #EA2243;
+}
+.orderPriceInfo text:first-child {
+    color: #333333;
+}
+
+.addressElement {
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.addressInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.addressInfo text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.addressInfo text:first-child {
+    margin-right: 20rpx;
+}
+.addressElement > text {
+    display: block;
+    margin-top: 10rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+
+.orderImg {
+    display: flex;
+    width: 690rpx;
+    padding: 30rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderImg image {
+    display: block;
+    width: 330rpx;
+    height: 196rpx;
+    border: 2rpx solid #999999;
+    border-radius: 16rpx;
+}
+
+.expressElement {
+    width: 690rpx;
+    padding: 30rpx;
+    background: #ffffff;
+}
+.expressElement text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.expressElement text:last-child {
+    margin-top: 10rpx;
+}

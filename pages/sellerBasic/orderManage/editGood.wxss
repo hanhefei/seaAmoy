@@ -1,0 +1,76 @@
+/**pages/sellerBasic/orderManage/editGood**/
+.editText {
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+}
+.editText text {
+    display: block;
+    margin-top: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.editText textarea {
+    display: block;
+    width: 646rpx;
+    height: 172rpx;
+    margin-top: 38rpx;
+    margin-bottom: 30rpx;
+    padding: 20rpx;
+    border: 2rpx solid #DDDDDD;
+    font-size: 28rpx;
+    color: #666666;
+}
+
+.editNoText {
+    width: 690rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+}
+.editNoText text {
+    display: block;
+    margin-top: 30rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.editNoText textarea {
+    display: block;
+    width: 646rpx;
+    height: 172rpx;
+    margin-top: 38rpx;
+    margin-bottom: 30rpx;
+    padding: 20rpx;
+    border: 2rpx solid #DDDDDD;
+    font-size: 28rpx;
+    color: #666666;
+}
+
+.confirm {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 60rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cancel {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-top: 60rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}

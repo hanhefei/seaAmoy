@@ -1,0 +1,112 @@
+<!--pages/sellerBasic/classify/index-->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="searchElement">
+        <view class="searchBox" bindtap="goThisSearch">
+            <!-- <input id="searchClassify" class="searchClassify" type="text" /> -->
+
+            <view class="searchLabel" for="searchClassify">
+                <image src="/resources/imgs/search.png"></image>
+
+                <text>搜索</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="classify" style="height: {{screenHeight}}px"> -->
+    <view class="classify">
+        <view class="countryElement">
+            <scroll-view class="countryBox" scroll-x>
+                <view class="everyCountry" wx:for="{{countryList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="changeCountry">
+                    <text class="{{index == countryActive ? 'countryActive' : ''}}">{{item.title}}</text>
+                </view>
+            </scroll-view>
+        </view>
+
+        <view class="classifyElement" style="height: {{screenHeight}}px">
+            <view class="floorElement">
+                <scroll-view class="floorBox" scroll-y>
+                    <view class="everyFloor {{index == floorActive ? 'floorActive' : ''}}" wx:for="{{floorList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="changeFloor">{{item.name}}</view>
+                </scroll-view>
+            </view>
+            
+            <view class="typeElement">
+                <!-- <view class="typeList" wx:for="{{typeList}}" wx:key="{{index}}"> -->
+                <view class="typeList">
+                    <!-- <view class="typeName">
+                        <text></text>
+
+                        <text>{{item.typeName}}</text>
+                    </view> -->
+
+                    <view class="typeChildList">
+                        <view class="everyTypeChild" style="margin-right: {{(indexs + 1) % 3 == 0 ? '0' : '54rpx'}}" wx:for="{{typeList}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}" wx:if="{{typeList}}" data-index="{{indexs}}" bindtap="selectThisType">
+                            <image src="{{items.thumb}}"></image>
+
+                            <text>{{items.name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="confirm">
+        <text>确认</text>
+    </view> -->
+</view>
+
+<view class="container" wx:else>
+    <view class="searchElement">
+        <view class="searchBox" bindtap="goThisSearch">
+            <!-- <input id="searchClassify" class="searchClassify" type="text" /> -->
+
+            <view class="searchLabel" for="searchClassify">
+                <image src="/resources/imgs/search.png"></image>
+
+                <text>搜索</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="classify" style="height: {{screenHeight}}px"> -->
+    <view class="classify">
+        <view class="countryElement">
+            <scroll-view class="countryBox" scroll-x>
+                <view class="everyCountry" wx:for="{{countryList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="changeCountry">
+                    <text class="{{index == countryActive ? 'countryActive' : ''}}">{{item.title}}</text>
+                </view>
+            </scroll-view>
+        </view>
+
+        <view class="classifyElement" style="height: {{screenHeight}}px">
+            <view class="floorElement">
+                <scroll-view class="floorBox" scroll-y>
+                    <view class="everyFloor {{index == floorActive ? 'floorActive' : ''}}" wx:for="{{floorList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="changeFloor">{{item.name}}</view>
+                </scroll-view>
+            </view>
+            
+            <view class="typeElement">
+                <!-- <view class="typeList" wx:for="{{typeList}}" wx:key="{{index}}"> -->
+                <view class="typeList">
+                    <!-- <view class="typeName">
+                        <text></text>
+
+                        <text>{{item.typeName}}</text>
+                    </view> -->
+
+                    <view class="typeChildList">
+                        <view class="everyTypeChild" style="margin-right: {{(indexs + 1) % 3 == 0 ? '0' : '54rpx'}}" wx:for="{{typeList}}" wx:for-item="items" wx:for-index="indexs" wx:key="{{indexs}}" wx:if="{{typeList}}" data-index="{{indexs}}" bindtap="selectThisType">
+                            <image src="{{items.thumb}}"></image>
+
+                            <text>{{items.name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="confirm">
+        <text>确认</text>
+    </view> -->
+</view>

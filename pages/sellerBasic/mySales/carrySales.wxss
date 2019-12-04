@@ -1,0 +1,70 @@
+/**pages/sellerBasic/mySales/carrySales**/
+.carrySales {
+    width: 690rpx;
+    padding: 40rpx 30rpx;
+    background: #ffffff;
+}
+.carrySalesTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrySalesTitle text {
+    display: block;
+    font-size: 24rpx;
+    color: #999999;
+}
+.carrySalesTitle text:first-child {
+    font-size: 32rpx;
+    color: #333333;
+}
+
+.carrySalesInput {
+    display: flex;
+    width: 690rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+.carrySalesInput text {
+    display: block;
+    margin-right: 20rpx;
+    font-size: 56rpx;
+    color: #333333;
+    line-height: 80rpx;
+}
+.carrySalesInput input {
+    display: block;
+    width: 610rpx;
+    height: 80rpx;
+    font-size: 56rpx;
+    line-height: 80rpx;
+}
+
+.carrySalesAllBtn {
+    display: flex;
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrySalesAllBtn text {
+    display: block;
+    font-size: 26rpx;
+    color: #FB7468;
+}
+.carrySalesAllBtn text:first-child {
+    color: #666666;
+}
+
+.carrySalesBtn {
+    display: block;
+    width: 690rpx;
+    height: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}

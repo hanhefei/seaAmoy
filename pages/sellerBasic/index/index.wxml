@@ -1,0 +1,217 @@
+<!-- pages/sellerBasic/index/index.wxml -->
+<import src="/template/tabbar/tabbar.wxml"/>
+
+<!-- 大B -->
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 96rpx;'}}" wx:if="{{stateType == 2}}">
+    <view class="storeInfo">
+        <view class="imgInfo" bindtap="goEditStore">
+            <image src="{{manufactorStoreInfo.find.logo}}"></image>
+
+            <text class="storeEdit">店铺编辑</text>
+        </view>
+
+        <view class="storeDataInfo">
+            <view>
+                <text class="storeName">{{manufactorStoreInfo.find.shop_name}}</text>
+
+                <view class="storeData">
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/commentNum.png"></image>综合评价:22分
+                    </view>
+
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/buyerNum.png"></image>粉丝数:{{manufactorStoreInfo.fan}}
+                    </view>
+                </view>
+            </view>
+
+            <text class="storeBorder"></text>
+        </view>
+
+        <text class="storeWareNum">共{{manufactorStoreInfo.goods_count}}件商品</text>
+    </view>
+
+    <view class="storeDealInfo">
+        <view class="dealInfo">
+            <view class="dealBox">
+                <view class="everyDeal" style="margin-bottom: 2rpx;">
+                    <view class="dealInfoOne">
+                        今日成交量<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待收货 7 件</text>
+                </view>
+                
+                <view class="everyDeal">
+                    <view class="dealInfoOne">
+                        当月成交量<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待收货 7 件</text>
+                </view>
+            </view>
+
+            <text class="dealHeightBorder"></text>
+
+            <view class="dealBox">
+                <view class="everyDeal" style="margin-bottom: 2rpx;">
+                    <view class="dealInfoOne">
+                        今日销售额<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待结算 0.00 元</text>
+                </view>
+                
+                <view class="everyDeal">
+                    <view class="dealInfoOne">
+                        当月销售额<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待结算 0.00 元</text>
+                </view>
+            </view>
+        </view>
+
+        <text class="dealWidthBorder"></text>
+    </view>
+
+    <view class="storeHandle">
+        <block wx:for="{{manufactorList}}" wx:key="{{index}}">
+            <navigator class="everyHandle" url="{{item.navUrl}}" hover-class="none">
+                <image src="{{item.iconImg}}"></image>
+
+                <text>{{item.text}}</text>
+            </navigator>
+        </block>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 96rpx;'}}" wx:else>
+    <view class="storeInfo">
+        <view class="imgInfo" bindtap="goEditStore">
+            <image src="{{agentStoreInfo.logo}}"></image>
+
+            <text class="storeEdit">店铺编辑</text>
+        </view>
+
+        <view class="storeDataInfo">
+            <view>
+                <text class="storeName">{{agentStoreInfo.shop_name}}</text>
+
+                <view class="storeData">
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/commentNum.png"></image>综合评价:123分
+                    </view>
+
+                    <view class="storeDataBlock">
+                        <image src="/resources/imgs/buyerNum.png"></image>粉丝数:{{agentStoreInfo.user_count}}
+                    </view>
+                </view>
+            </view>
+
+            <text class="storeBorder"></text>
+        </view>
+
+        <text class="storeWareNum">共{{agentStoreInfo.goods_count}}件商品</text>
+    </view>
+
+    <view class="storeDealInfo">
+        <view class="dealInfo">
+            <view class="dealBox">
+                <view class="everyDeal" style="margin-bottom: 2rpx;">
+                    <view class="dealInfoOne">
+                        今日成交量<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待收货 7 件</text>
+                </view>
+                
+                <view class="everyDeal">
+                    <view class="dealInfoOne">
+                        当月成交量<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待收货 7 件</text>
+                </view>
+            </view>
+
+            <text class="dealHeightBorder"></text>
+
+            <view class="dealBox">
+                <view class="everyDeal" style="margin-bottom: 2rpx;">
+                    <view class="dealInfoOne">
+                        今日销售额<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待结算 0.00 元</text>
+                </view>
+                
+                <view class="everyDeal">
+                    <view class="dealInfoOne">
+                        当月销售额<image src="/resources/imgs/dealIcon.png"></image>
+                    </view>
+
+                    <view class="dealInfoTwo">
+                        <text class="redBigText">18</text>件
+                    </view>
+
+                    <text class="dealInfoThree">不包含待结算 0.00 元</text>
+                </view>
+            </view>
+        </view>
+
+        <text class="dealWidthBorder"></text>
+    </view>
+
+    <view class="storeHandle">
+        <block wx:for="{{agentList}}" wx:key="{{index}}">
+            <navigator class="everyHandle" url="{{item.navUrl}}" hover-class="none">
+                <image src="{{item.iconImg}}"></image>
+
+                <text>{{item.text}}</text>
+            </navigator>
+        </block>
+    </view>
+</view>
+
+<!-- 版本 -->
+<view class="version" wx:if="{{showVersion}}">
+    <view class="versionElement">
+        <text class="tips">提示</text>
+
+        <text class="tipsText">当前微信版本过低，部分功能无法使用，请升级到最新微信版本后重试。</text>
+
+        <navigator class="tipsBtn" target="miniProgram" hover-class="none" open-type="exit">确定</navigator>
+    </view>
+</view>
+
+<template is="tabbar" data="{{tabbarList, tabbarIndex, isIphoneX}}"></template>

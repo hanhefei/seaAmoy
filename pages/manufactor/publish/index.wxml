@@ -1,0 +1,177 @@
+<!--pages/manufactor/publish/index-->
+<import src="/template/tabbar/tabbar.wxml"/>
+
+<view class="container" style="{{isIphoneX ? 'padding-bottom: 164rpx;' : 'padding-bottom: 96rpx;'}}">
+    <view class="everyInput everyBottom">
+        <view class="everyElement">
+            <text class="everyTitile">标题</text>
+
+            <input class="everyInputElement" type="text" value="{{wareTitle}}" name="title" placeholder="商品标题" placeholder-style="color: #999999;" data-variable="wareTitle" bindblur="saveInput" />
+        </view>
+    </view>
+    
+    <view class="everyInput everyBottom">
+        <view class="everyElement">
+            <text class="everyTitile">描述</text>
+
+            <input class="everyInputElement" type="text" value="{{wareDescribe}}" name="describe" placeholder="描述商品" placeholder-style="color: #999999;" data-variable="wareDescribe" bindblur="saveInput" />
+        </view>
+    </view>
+
+    <view class="everyBottom">
+        <view class="everyBlockTitle">
+            <text class="everyTitile">基础设置</text>
+        </view>
+
+        <view class="everyInput">
+            <view class="everyElement everyBorder">
+                <text class="everyTitile">分类</text>
+
+                <view class="selectBox" bindtap="goClassify">
+                    <!-- <text style="color: #333333;">中国</text> -->
+                    <text style="color: {{classify ? '#333333' : '#999999'}}">{{classify ? classify.name : '请选择分类'}}</text>
+
+                    <image class="selectImg" src="/resources/imgs/select.png"></image>
+                </view>
+            </view>
+        </view>
+
+        <view class="everyInput">
+            <view class="everyElement everyBorder">
+                <text class="everyTitile">价格</text>
+
+                <input class="everyInputElement" type="number" value="{{warePrice}}" name="price" maxlength="6" placeholder="¥0.00" placeholder-style="color: #999999;" data-variable="warePrice" bindblur="saveInput" />
+            </view>
+        </view>
+
+        <view class="everyInput">
+            <view class="everyElement everyBorder">
+                <text class="everyTitile">运费</text>
+
+                <input class="everyInputElement" type="number" value="{{wareFreight}}" name="freight" placeholder="¥0.00" placeholder-style="color: #999999;" data-variable="wareFreight" bindblur="saveInput" />
+            </view>
+        </view>
+
+        <view class="everyInput">
+            <view class="everyElement everyBorder">
+                <text class="everyTitile">税费</text>
+
+                <input class="everyInputElement" type="number" value="{{wareTaxation}}" name="taxation" placeholder="¥0.00" placeholder-style="color: #999999;" data-variable="wareTaxation" bindblur="saveInput" />
+            </view>
+        </view>
+
+        <view class="everyInput">
+            <view class="everyElement">
+                <text class="everyTitile">商品库存</text>
+
+                <input class="everyInputElement" type="number" value="{{wareStock}}" name="stock" placeholder="0" placeholder-style="color: #999999;" data-variable="wareStock" bindblur="saveInput" />
+            </view>
+        </view>
+    </view>
+
+    <view style="display: {{wareSku.length > 0 ? 'block' : 'none'}}">
+        <view class="everyBlockTitle">
+            <text class="everyTitile">商品属性</text>
+        </view>
+
+        <view class="everyNorms" wx:for="{{wareSku}}" wx:key="{{index}}">
+            <view class="everyInput">
+                <view class="everyElement everyBorder">
+                    <text class="everyTitile">供货价</text>
+
+                    <input class="everyInputElement" type="number" value="{{item.price}}" name="price{{index}}" maxlength="6" placeholder="¥0.00" placeholder-style="color: #999999;" data-index="{{index}}" data-variable="price" bindblur="saveSkuInput" />
+                </view>
+            </view>
+
+            <view class="everyInput">
+                <view class="everyElement">
+                    <text class="everyTitile">商品规格</text>
+
+                    <view class="normsElement">
+                        <input type="text" name="norms{{index}}" value="{{item.name}}" placeholder="颜色、大小" placeholder-style="color: #999999;" data-index="{{index}}" data-variable="name" bindblur="saveSkuInput"/>
+
+                        <text data-index="{{index}}" bindtap="delThisSku">删除</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="addNewNorms">
+        <view bindtap="addWareSku">
+            <image src="/resources/imgs/addSku.png"></image>
+
+            <text>添加新的商品规格</text>
+        </view>
+    </view>
+
+    <view>
+        <view class="everyBlockTitle">
+            <text class="everyTitile">商品图片</text>
+        </view>
+
+        <view class="everyWareInfo">
+            <view class="wareTilte" style="margin-top: 24rpx;">
+                商品封面图
+                <text>（30x30px）</text>
+            </view>
+
+            <view class="wareImgList">
+                <view class="imgList" wx:if="{{warePoster}}">
+                    <image class="everyImg" mode="aspectFill" src="{{warePoster}}"></image>
+
+                    <image class="delImg" src="/resources/imgs/delImg.png" data-variable="warePoster" bindtap="deleteThisImg"></image>
+                </view>
+
+                <image class="addImg" src="/resources/imgs/addImg.png" wx:else data-variable="warePoster" bindtap="updateImg"></image>
+            </view>
+        </view>
+
+        <view class="everyWareInfo">
+            <view class="wareTilte" style="margin-top: 24rpx;">
+                商品详情轮播图
+                <text>（750x600px）</text>
+            </view>
+
+            <view class="wareImgList">
+                <view class="imgList" wx:for="{{wareCarousel}}" wx:key="{{index}}" wx:if="{{wareCarousel.length > 0}}">
+                    <image class="everyImg" mode="aspectFill" src="{{item}}"></image>
+
+                    <image class="delImg" src="/resources/imgs/delImg.png" data-index="{{index}}" data-variable="wareCarousel" bindtap="deleteThisImg"></image>
+                </view>
+
+                <image class="addImg" src="/resources/imgs/addImg.png" wx:if="{{wareCarousel.length < 3}}" data-variable="wareCarousel" bindtap="updateImg"></image>
+            </view>
+        </view>
+
+        <view class="everyWareInfo">
+            <view class="wareTilte" style="margin-top: 24rpx;">
+                商品详情图
+                <text>（宽:750px 长度不超过800px）</text>
+            </view>
+
+            <view class="wareImgList">
+                <view class="imgList" wx:for="{{wareDescImg}}" wx:key="{{index}}" wx:if="{{wareDescImg.length > 0}}">
+                    <image class="everyImg" mode="aspectFill" src="{{item}}"></image>
+
+                    <image class="delImg" src="/resources/imgs/delImg.png" data-index="{{index}}" data-variable="wareDescImg" bindtap="deleteThisImg"></image>
+                </view>
+
+                <image class="addImg" src="/resources/imgs/addImg.png" wx:if="{{wareDescImg.length < 3}}" data-variable="wareDescImg" bindtap="updateImg"></image>
+            </view>
+        </view>
+
+    </view>
+
+    <view class="publishBtn" wx:if="{{!where}}">
+        <text class="publishUpdate" data-state="1" bindtap="publishWare">发布且上架</text>
+
+        <text class="publishNoUpdate" data-state="0" bindtap="publishWare">发布不上架</text>
+    </view>
+
+    <view class="editBtn" wx:else>
+        <text class="publishUpdate" bindtap="editWare">确认修改</text>
+    </view>
+</view>
+
+<template is="tabbar" data="{{tabbarList, tabbarIndex, isIphoneX}}" wx:if="{{!where}}"></template>

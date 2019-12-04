@@ -1,0 +1,142 @@
+/**pages/sellerBasic/myLower/index**/
+page {
+    background: #ffffff;
+}
+
+.myLower {
+    display: flex;
+    width: 100%;
+    height: 478rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lowerCencus{
+    display: flex;
+    width: 675rpx;
+    height: 386rpx;
+    padding: 0 50rpx;
+    background: #ffffff;
+    border-bottom: 16rpx solid #F2F2F2;
+    justify-content: space-between;
+}
+.lowerTextOne {
+    display: flex;
+    width: 690rpx;
+    margin: 0 auto;
+    margin-top: 36rpx;
+    justify-content: flex-end;
+    align-items: center;
+}
+.lowerTextOne image {
+    display: block;
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.lowerTextOne text {
+    display: block;
+    font-size: 22rpx;
+    color: #666666;
+}
+.lowerDay,
+.lowerAll {
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lowerNum {
+    display: flex;
+    margin-top: 20rpx;
+    font-size: 72rpx;
+    color: #333333;
+    justify-content: center;
+}
+.lowerTextTwo {
+    display: flex;
+    margin-top: 60rpx;
+    margin-bottom: 180rpx;
+    font-size: 36rpx;
+    color: #333333;
+    justify-content: center;
+}
+.lowerDay .lowerTextTwo,
+.lowerAll .lowerTextTwo {
+    margin-bottom: 0;
+}
+
+.lowerInfo {
+    display: flex;
+    width: 690rpx;
+    height: 104rpx;
+    margin-bottom: 16rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.lowerInfo > text {
+    display: block;
+    font-size: 32rpx;
+    color: #333333;
+}
+.lowerNum {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lowerNum text {
+    display: block;
+    font-size: 36rpx;
+    color: #333333;
+}
+.lowerNum text:first-child {
+    color: #EA2243;
+}
+
+.lowerList {
+    width: 100%;
+    background: #ffffff;
+}
+.everyLower {
+    display: flex;
+    width: 690rpx;
+    height: 130rpx;
+    padding: 0 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: space-between;
+    align-items: center;
+}
+.everyLowerInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyLowerInfo image {
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 30rpx;
+    border-radius: 50%;
+}
+.everyLowerInfo text {
+    display: block;
+    font-size: 28rpx;
+    color: #333333;
+}
+.everyLower > text {
+    display: block;
+    width: 132rpx;
+    height: 52rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+<!-- pages/sellerBasic/authorize/index -->
+<view class="container">
+    <image class="icon" src="/resources/imgs/log.png"></image>
+
+    <view class="inputElement">
+        <view class="everyInput">
+            <text>账号</text>
+
+            <input type="text" value="{{userName}}" placeholder="请输入账号" placeholder-style="color: #999999;" data-variable="userName" bindinput="saveInputText" />
+        </view>
+
+        <view class="everyInput">
+            <text>密码</text>
+
+            <input type="text" value="{{passWord}}" placeholder="请输入密码" placeholder-style="color: #999999;" data-variable="passWord" bindinput="saveInputText" />
+        </view>
+    </view>
+
+    <view class="loginBtn" bindtap="login">
+        <text>登录</text>
+    </view>
+
+    <button class="wechatLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image src="/resources/imgs/wechat.png"></image>
+
+        <text>微信登录</text>
+        
+        <text>(代理商可直接使用微信登陆)</text>
+    </button>
+</view>

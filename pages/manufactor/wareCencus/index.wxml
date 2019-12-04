@@ -1,0 +1,103 @@
+<!--pages/manufactor/wareCencus/index-->
+<view class="container">
+    <view class="wareCencusNum">
+        <text>累计总销量</text>
+          
+        <view>
+            <text>{{allSales}}</text>
+            
+            <text>件</text>
+        </view>
+    </view>
+
+    <view class="wareOption">
+        <text class="{{optionActive == 0 ? 'optionActive' : ''}}" data-index="0" bindtap="changeOptions">按商品查找</text>
+
+        <text class="{{optionActive == 1 ? 'optionActive' : ''}}" data-index="1" bindtap="changeOptions">按代理商查找</text>
+    </view>
+
+    <view class="wareTime">
+        <text>时间选择</text>
+
+        <view class="timeOptions">
+            <picker>
+                <text>2019.01.20-2019.05.20</text>
+            </picker>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="wareCencusNowNum">
+        <text>当前累计销售商品</text>
+          
+        <view>
+            <text>562</text>
+            
+            <text>件</text>
+        </view>
+    </view>
+
+    <view class="wareCencusSearch" wx:if="{{optionActive != 1}}">
+        <input id="cencusSearch" class="cencusSearch" type="text" value="{{searchText}}" confirm-type="" bindfocus="getFocus" bindblur="getBlur" bindinput="saveInput" bindconfirm="search" />
+
+        <label class="cencusSearchLabel" for="cencusSearch" wx:if="{{showInputLabel}}">
+            <image src="/resources/imgs/search.png"></image>
+
+            <text>搜索商品名称</text>
+        </label>
+    </view>
+
+    <view class="wareListElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}" wx:if="{{optionActive == 0}}">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}">
+            <view class="everyWareInfo">
+                <image src="{{item.thumb}}"></image>
+
+                <view class="everyDescribe">
+                    <text class="everyTitle">{{item.title}}</text>
+
+                    <view class="everyPrice">
+                        <text>￥{{item.supplier}}</text>
+                        
+                        <text>(含税费:¥{{item.taxes}} 运费:¥{{item.freight}})</text>
+                    </view>
+
+                    <view class="everyOtherInfo">
+                        <view class="everyCountry">
+                            <image src="{{item.country_flag}}"></image>
+
+                            <text>{{item.country_name}}</text>
+                        </view>
+
+                        <text>已售:{{item.sales}}</text>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="everyHandle">
+                <text data-id="{{item.id}}" data-where="wareDetails" bindtap="goOrderDetails">查看代理商详情</text>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+
+    <view class="agentListElement" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}" wx:if="{{optionActive == 1}}">
+        <view class="everyAgent" wx:for="{{agentList}}" wx:key="{{index}}">
+            <view class="agentInfo">
+                <image src="{{item.logo}}"></image>
+
+                <text>{{item.shop_name}}</text>
+            </view>
+
+            <view class="agentSales">
+                <text>累计卖出{{item.sales}}件商品</text>
+
+                <text class="agentHandle" data-id="{{item.user_id}}" data-where="agentDetails" bindtap="goOrderDetails">查看详情</text>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+</view>

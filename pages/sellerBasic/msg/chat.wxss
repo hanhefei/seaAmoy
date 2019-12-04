@@ -1,0 +1,108 @@
+/**pages/sellerBasic/msg/chat**/
+scroll-view {
+    width: 750rpx;
+    /* background: #ffffff; */
+    padding: 20rpx 0;
+    box-sizing: border-box;
+}
+scroll-view .content {
+    padding: 0 30rpx;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 40rpx;
+}
+scroll-view .content .tip {
+    width:210rpx;
+    height:57rpx;
+    background-color:rgba(0, 0, 0, 0.3);
+    display:inline-block;
+    color:#fff;
+    line-height:57rpx;
+    border-radius:30rpx;
+    font-size:28rpx;
+    text-align: center;
+}
+scroll-view .content > image {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 100%;
+    background-color: #cccccc;
+}
+scroll-view .content .con {
+    display: flex;
+    word-wrap: break-word;
+    word-break: normal; 
+    flex-direction: column;
+    justify-content: center;
+}
+.conName {
+    font-size: 24rpx;
+    color: #666666;
+}
+.conContent {
+    max-width: 456rpx;
+    margin-top: 10rpx;
+    padding: 20rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+scroll-view .content .video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100rpx;
+}
+scroll-view .content .miao{
+    line-height: 85rpx;
+    margin: 0 20rpx;
+    color: #999;
+    font-size: 32rpx;
+}
+scroll-view .content .video > image {
+    width: 29rpx;
+    height: 40rpx;
+}
+
+.controller {
+    display: flex;
+    height: 96rpx;
+    padding: 0 30rpx;
+    background: #EAEAEA; 
+    box-sizing: border-box;
+    align-items: center;
+}
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input {
+    flex: 2;
+    height: 72rpx;
+    padding: 0 20rpx;
+    background: #ffffff;
+    border-radius: 40rpx;
+}
+.send {
+    border-radius: 15rpx;
+    margin-left: 20rpx;
+    width: 126rpx;
+    height: 72rpx;
+    line-height: 72rpx;
+    color: #EA2243;
+    text-align: center;
+}
+
+.isPhonex::after {
+    content: ' ';
+    position: fixed;
+    left: 0;
+    bottom: 0!important;
+    height: 68rpx!important;
+    width: 100%;
+    background: #EAEAEA;
+}

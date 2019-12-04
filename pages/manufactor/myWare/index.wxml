@@ -1,0 +1,104 @@
+<!--pages/manufactor/myWare/index-->
+<view class="container">
+    <view class="optionElement">
+        <view class="everyOption {{optionActive == index ? 'optionActive' : ''}}" wx:for="{{optionList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="changeOptions">
+            <text>{{item}}</text>
+
+            <text class="optionActiveBorder" wx:if="{{optionActive == index}}"></text>
+        </view>
+    </view>
+
+    <view class="classify" bindtap="goClassify">
+        <text>{{classify ? classify.name : '全部商品'}}</text>
+
+        <view class="classifyElement">
+            <text>分类</text>
+
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <view class="wareElement" style="{{isIphoneX ? 'padding-bottom: 228rpx;' : 'padding-bottom: 160rpx;'}}">
+        <view class="everyWare" wx:for="{{wareList}}" wx:key="{{index}}">
+            <view class="everyWareInfo">
+                <image src="{{item.thumb}}"></image>
+
+                <view class="everyDescribe">
+                    <text class="everyTitle">{{item.title}}</text>
+                    
+                    <view class="everyPrice">
+                        <text class="nowPrice">￥{{item.supplier}}</text>
+
+                        <!-- <text class="oldPrice">￥{{item.money}}</text> -->
+                    </view>
+
+                    <view class="everyOtherInfo">
+                        <view class="otherInfo">
+                            <text>已售:{{item.sales}}</text>
+
+                            <text>库存:{{item.inventory}}</text>
+                        </view>
+
+                        <view class="countryInfo">
+                            <image src="{{item.country_flag}}"></image>
+
+                            <text>{{item.country_name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="everyHandle" wx:if="{{optionActive == 0}}">
+                <text data-ware-id="{{item.id}}" bindtap="goEditPublish">编辑</text>
+
+                <text data-ware-id="{{item.id}}" bindtap="showLowerModel">下架</text>
+
+                <text data-ware-id="{{item.id}}" bindtap="showDeleteModel">删除</text>
+            </view>
+
+            <view class="everyHandle" wx:if="{{optionActive == 1}}">
+                <text data-ware-id="{{item.id}}" bindtap="goLowerWare">查看原因</text>
+
+                <text data-ware-id="{{item.id}}" bindtap="showDeleteModel">删除</text>
+            </view>
+
+            <view class="everyHandle" wx:if="{{optionActive == 2}}">
+                <text data-ware-id="{{item.id}}" bindtap="goEditPublish">编辑</text>
+
+                <text data-ware-id="{{item.id}}" bindtap="updateHandle">上架</text>
+
+                <text data-ware-id="{{item.id}}" bindtap="showDeleteModel">删除</text>
+            </view>
+        </view>
+
+        <view class="noMore" wx:if="{{showNoMored}}">暂无更多数据</view>
+    </view>
+
+    <view class="delElement" style="display: {{showDeleteModel ? 'block' : 'none'}}">
+        <view class="delHandle">
+            <text>确认删除吗？</text>
+
+            <view class="handleBtn">
+                <text bindtap="hideDeleteModel">取消</text>
+
+                <text bindtap="deleteHandle">确认</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="lowerElement" style="display: {{showLowerModel ? 'block' : 'none'}};">
+        <view class="lowerHandle">
+            <text>确认下架吗？</text>
+
+            <view class="handleBtn">
+                <text bindtap="hideLowerModel">取消</text>
+
+                <text bindtap="lowerHandle">确认</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="publishNewWare {{isIphoneX ? 'fix-iphonex-button' : ''}}" bindtap="goPublish">
+        <text>发布新宝贝</text>
+    </view>
+</view>

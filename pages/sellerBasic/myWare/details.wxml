@@ -1,0 +1,165 @@
+<!--pages/sellerBasic/myWare/details-->
+<view class="container" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+    <swiper class="carousel" indicator-dots="true" indicator-color="rgba(250, 250, 250, .5)" indicator-active-color="#ffffff" autoplay="true" interval="2000" duration="1000" circular="true">
+        <block wx:for="{{carousel}}" wx:key="{{index}}">
+            <swiper-item>
+                <image mode="aspectFill" src="{{item}}" mode="aspectFill"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="detailsElementOne">
+        <view class="elementOneChildOne">
+            <view>
+                <text>￥</text>
+                <text>{{wareInfo.supplier}}</text>
+            </view>
+
+            <text>（不含税费、运费）</text>
+        </view>
+
+        <!-- <text class="elementOneChildTwo">原价:￥800</text> -->
+
+        <text class="elementOneChildThree">{{wareInfo.title}}</text>
+
+        <view class="elementOneChildFour">
+            <text>已售:{{wareInfo.sales}}</text>
+
+            <text>库存:{{wareInfo.inventory}}</text>
+        </view>
+
+        <view class="elementOneChildFive">
+            <view class="detailsCommentNum">
+                <text>综合评分</text>
+
+                <view class="commentStars">
+                    <view wx:for="{{5}}" wx:key="{{index}}">
+                        <image src="/resources/imgs/starsActive.png" mode="aspectFill" wx:if="{{index + 1 <= commentStarsNum}}"></image>
+
+                        <image src="/resources/imgs/stars.png" mode="aspectFill" wx:else></image>
+                    </view>
+                </view>
+
+                <text>4分</text>
+            </view>
+
+            <view class="detailsCountry">
+                <image src="{{wareInfo.country_flag}}"></image>
+
+                <text>{{wareInfo.country_name}}</text>
+            </view>
+        </view>
+    </view>
+
+    <text class="detailsElementTwo">{{wareInfo.introduction}}</text>
+
+    <view class="detailsSku" bindtap="showSkuModel">
+        <view>
+            <text>选规格</text>
+
+            <text>查看规格</text>
+        </view>
+
+        <image src="/resources/imgs/select.png"></image>
+    </view>
+
+    <view class="detailsPriceInfo">
+        <view class="everyPriceInfo">
+            <text>运费</text>
+
+            <text>¥{{wareInfo.freight}}</text>
+        </view>
+        
+        <view class="everyPriceInfo">
+            <text>税费</text>
+
+            <text>¥{{wareInfo.taxes}}</text>
+        </view>
+
+        <view class="everyPriceInfo everyPriceInfoFlexStart">
+            <text>说明</text>
+
+            <text>文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢文案呢</text>
+        </view>
+    </view>
+
+    <view class="detailsCommentElement" wx:if="{{wareInfo.review_num > 0}}">
+        <view class="detailsComment">
+            <view class="detailsCommentTitle">
+                <text>商品评价({{wareInfo.review_num}})</text>
+
+                <view class="detailsCommentTitleHandle" bindtap="goAllComment">
+                    <text>查看全部</text>
+
+                    <image src="/resources/imgs/redSelect.png"></image>
+                </view>
+            </view>
+
+            <!-- <view class="detailsCommentType">
+                <text>防水性能好</text>
+
+                <text>好看</text>
+
+                <text>戴着舒服</text>
+            </view> -->
+
+            <view class="commentList">
+                <view class="everyComment" wx:for="{{commentList}}" wx:key="{{index}}">
+                    <view class="everyCommentInfo">
+                        <image src="{{item.headimg}}"></image>
+
+                        <text>{{item.username}}</text>
+                    </view>
+
+                    <text class="everyContent">{{item.review_content}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="detailsInfo" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}" wx:if="{{wareInfo.photo.length > 0}}">
+        <view class="detailsInfoTitle">
+            <text></text>
+            <text>商品详情</text>
+            <text></text>
+        </view>
+
+        <view class="detailsDescribe">
+            <image mode="aspectFill" src="{{item}}" wx:for="{{wareInfo.photo}}" wx:key="{{index}}"></image>
+
+            <!-- <text>卡西欧（CASIO）手表商务防水男士石英表MTP-1375卡西欧手表商务防水男士石英表MTP-1375卡西欧手表商务防水男士石英表MTP-1375卡西欧（CASIO）手表商务防水男士石英表MTP-1375</text> -->
+        </view>
+    </view>
+
+    <view class="wareSku" wx:if="{{skuModel}}" catchtap="hideSkuModel">
+        <view class="skuBox" catchtap="noHide">
+            <view class="wareSkuInfo">
+                <image src="{{wareInfo.thumb}}"></image>
+
+                <view class="wareInfoElement">
+                    <view class="wareInfoTop">
+                        <text>¥{{skuPrice ? skuPrice : wareInfo.supplier}}</text>
+
+                        <text>不含税费</text>
+
+                        <text>不含运费</text>
+                    </view>
+
+                    <view class="wareInfoBottom">
+                        <text>重量：0.2kg</text>
+
+                        <text>库存：85</text>
+                    </view>
+                </view>
+            </view>
+
+            <view class="wareSkuElement">
+                <text>规格</text>
+
+                <view class="skuList">
+                    <text class="everySku {{index === skuIndex ? 'skuActive' : ''}}" wx:for="{{wareInfo.sku}}" wx:key="{{index}}" data-index="{{index}}" bindtap="chagneSkuIndex">{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

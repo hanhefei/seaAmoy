@@ -1,0 +1,159 @@
+/**pages/sellerBasic/orderManage/index**/
+.optionElement {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 690rpx;
+    height: 92rpx;
+    padding: 0 30rpx;
+    background: #ffffff;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyOption {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin-right: 20rpx;
+    line-height: 92rpx;
+    font-size: 28rpx;
+    color: #666666;
+    text-align: center;
+}
+.everyOption:last-child {
+    margin-right: 0;
+}
+.optionActive {
+    color: #EA2243!important;
+}
+.optionActiveBorder {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4rpx;
+    background: #EA2243;
+}
+
+.orderElement {
+    width: 100%;
+    margin-top: 110rpx;
+}
+.everyOrder {
+    width: 720rpx;
+    padding: 30rpx 0;
+    padding-left: 30rpx;
+    margin-bottom: 16rpx;
+    background: #ffffff;
+}
+.orderInfo {
+    display: flex;
+    width: 690rpx;
+    padding-right: 30rpx;
+    padding-bottom: 30rpx;
+    border-bottom: 2rpx solid #F2F2F2;
+    justify-content: space-between;
+}
+.orderInfo > image {
+    display: block;
+    width: 168rpx;
+    height: 168rpx;
+    border-radius: 16rpx;
+}
+.orderDescribe {
+    width: 500rpx;
+}
+.orderTitle {
+    overflow: hidden;
+    display: -webkit-box;
+    font-size: 28rpx;
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.orderPriceInfo {
+    display: flex;
+    margin-top: 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderPriceInfo text {
+    font-size: 32rpx;
+}
+.orderPrice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.orderPrice > text:first-child {
+    display: block;
+    margin-right: 30rpx;
+    color: #EA2243;
+}
+.orderPrice > text:last-child {
+    display: block;
+    color: #333333;
+}
+.orderPriceInfo > text {
+    display: block;
+    color: #333333;
+}
+.orderHandle {
+    display: flex;
+    width: 690rpx;
+    margin-top: 20rpx;
+    padding-right: 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactSeller {
+    display: block;
+    width: 172rpx;
+    height: 52rpx;
+    background: #DADADA;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #333333;
+    text-align: center;
+}
+.handleElement {
+    display: block;
+    width: 216rpx;
+    height: 52rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}
+.agentHandle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.agentHandleElement {
+    display: block;
+    width: 164rpx;
+    height: 52rpx;
+    margin-left: 20rpx;
+    background: #EA2243;
+    border-radius: 26rpx;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.fix-iphonex-button::after {
+    content: ' ';
+    position: fixed;
+    bottom: 0!important;
+    height: 68rpx!important;
+    width: 100%;
+    background: #F2F2F2;
+} 

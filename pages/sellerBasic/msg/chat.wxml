@@ -1,0 +1,70 @@
+<!--pages/sellerBasic/msg/chat-->
+<!-- 大B -->
+<view class="container" wx:if="{{stateType == 2}}">
+    <scroll-view scrollY style='height: {{sHeight}}px;' scroll-into-view="{{toIndex}}">
+ 
+        <block wx:for="{{chatList}}" wx:key="{{index}}">
+            <view id="{{'chat' + index}}" class='content' style='justify-content: {{item.pos}}'>
+                <!-- 登录退出提示 -->
+                <text class='tip' wx:if="{{item.type=='login'||item.type=='logout'}}">{{item.msg}}</text>
+
+                <!-- 发送信息用户的头像 -->
+                <image src='{{to_head}}' wx:if="{{item.pos=='flex-start'}}" style='margin-right: 30rpx;'/>
+
+                <!-- 发送接受的信息 -->
+                <view class='con' wx:if="{{item.type == '1'}}" style='{{item.pos == "flex-start" ? "align-items: flex-start;" : "align-items: flex-end;"}}'>
+                    <text class="conName">{{item.fromname}}</text>
+
+                    <text class="conContent" style='{{item.pos == "flex-start" ? "background-color: #ffffff; color: #333333;" : "background-color: #EC7185; color: #fff;"}}'>{{item.content}}</text>
+                </view>
+                
+                <!-- 发送信息用户的头像 -->
+                <image src='{{from_head}}' wx:if="{{item.pos=='flex-end'}}" style='margin-left: 30rpx;'/>
+            </view>
+        </block>
+
+    </scroll-view>
+
+    <view class="controller {{isIphoneX ? 'isPhonex' : ''}}">
+        <view class='text'>
+            <input type='text' confirm-type="send" bindinput='saveInput' value="{{inputText}}" bindconfirm="send" />
+
+            <view class='send' bindtap='send'>发送</view>
+        </view>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" wx:else>
+    <scroll-view scrollY style='height: {{sHeight}}px;' scroll-into-view="{{toIndex}}">
+ 
+        <block wx:for="{{chatList}}" wx:key="{{index}}">
+            <view id="{{'chat' + index}}" class='content' style='justify-content: {{item.pos}}'>
+                <!-- 登录退出提示 -->
+                <text class='tip' wx:if="{{item.type=='login'||item.type=='logout'}}">{{item.msg}}</text>
+
+                <!-- 发送信息用户的头像 -->
+                <image src='{{to_head}}' wx:if="{{item.pos=='flex-start'}}" style='margin-right: 30rpx;'/>
+
+                <!-- 发送接受的信息 -->
+                <view class='con' wx:if="{{item.type == '1'}}" style='{{item.pos == "flex-start" ? "align-items: flex-start;" : "align-items: flex-end;"}}'>
+                    <text class="conName">{{item.fromname}}</text>
+
+                    <text class="conContent" style='{{item.pos == "flex-start" ? "background-color: #ffffff; color: #333333;" : "background-color: #EC7185; color: #fff;"}}'>{{item.content}}</text>
+                </view>
+                
+                <!-- 发送信息用户的头像 -->
+                <image src='{{from_head}}' wx:if="{{item.pos=='flex-end'}}" style='margin-left: 30rpx;'/>
+            </view>
+        </block>
+
+    </scroll-view>
+
+    <view class="controller {{isIphoneX ? 'isPhonex' : ''}}">
+        <view class='text'>
+            <input type='text' confirm-type="send" bindinput='saveInput' value="{{inputText}}" bindconfirm="send" />
+
+            <view class='send' bindtap='send'>发送</view>
+        </view>
+    </view>
+</view>

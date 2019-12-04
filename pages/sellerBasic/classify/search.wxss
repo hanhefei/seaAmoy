@@ -1,0 +1,79 @@
+/**pages/sellerBasic/classify/search**/
+page {
+    background: #ffffff;
+}
+
+.searchElement {
+    display: flex;
+    width: 690rpx;
+    padding: 20rpx 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchInput {
+    display: block;
+    width: 564rpx;
+    height: 72rpx;
+    padding: 0 20rpx;
+    background: #F4F4F4;
+    border-radius: 42rpx;
+    font-size: 24rpx;
+}
+.searchBtn {
+    display: block;
+    font-size: 28rpx;
+    color: #EA2243;
+}
+
+.hasClassify {
+    display: flex;
+    width: 630rpx;
+    padding: 40rpx 60rpx 0 60rpx;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.everyClassify {
+    display: flex;
+    margin-bottom: 60rpx;
+    margin-right: 50rpx;
+    flex-direction: column;
+}
+.everyClassify image {
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 10rpx;
+}
+.everyClassify text {
+    display: block;
+    margin-top: 12rpx;
+    font-size: 24rpx;
+    color: #333333;
+    text-align: center;
+}
+
+.noClassify {
+    display: flex;
+    margin-top: 180rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noClassify image {
+    display: block;
+    width: 150rpx;
+    height: 98rpx;
+    margin: 0 auto;
+}
+.noClassify text {
+    display: block;
+    margin-top: 32rpx;
+    font-size: 24rpx;
+    color: #8A96A3;
+    text-align: center;
+}
+
+.fix-iphonex-button::after {
+    background: #ffffff!important;
+}

@@ -1,0 +1,22 @@
+<!--pages/sellerBasic/orderManage/sendGood-->
+<view class="container">
+    <view class="expressCode">
+        <text>填写物流单号</text>
+
+        <input type="text" placeholder="请输入快递单号" placeholder-style="color: #666666;" />
+    </view>
+
+    <view class="expressName">
+        <text>填写物流单号</text>
+        
+        <view>
+            <picker>
+                <text>请选择</text>
+            </picker>
+                
+            <image src="/resources/imgs/select.png"></image>
+        </view>
+    </view>
+
+    <text class="confirm">提交</text>
+</view>

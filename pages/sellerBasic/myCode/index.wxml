@@ -1,0 +1,58 @@
+<!--pages/sellerBasic/myCode/index-->
+<!-- 大B -->
+<view class="container" wx:if="{{stateType == 2}}">
+    <view class="myInfo">
+        <image src="{{storeInfo.logo}}"></image>
+
+        <view class="textInfo">
+            <text>{{storeInfo.username}}</text>
+
+            <text>邀请您进入【{{storeInfo.shop_name}}】店铺</text>
+        </view>
+    </view>
+
+    <view class="myCodeInfo">
+        <text class="codeTextOne">识别二维码  一起购物</text>
+
+        <image class="codeImg" mode="aspectFill" src="{{codePath}}"></image>
+
+        <view class="codeHandle">
+            <text bindtap="saveImg">分享给代理商</text>
+
+            <text bindtap="saveImg">分享给C端用户</text>
+        </view>
+
+        <view class="codeTextTwo">
+            <text>备注：</text>
+            
+            <text>保存后，需将二维码分享给邀请用户</text>
+        </view>
+    </view>
+</view>
+
+<!-- 小B -->
+<view class="container" wx:else>
+    <view class="myInfo">
+        <image src="{{storeInfo.logo}}"></image>
+
+        <view class="textInfo">
+            <text>{{storeInfo.username}}</text>
+
+            <text>邀请您进入【{{storeInfo.shop_name}}】店铺</text>
+        </view>
+    </view>
+
+    <view class="myCodeInfo">
+        <text class="codeTextOne">识别二维码  一起购物</text>
+
+        <image class="codeImg" src="{{codePath}}"></image>
+
+        <text class="codeHandleBtn" bindtap="saveImg">分享</text>
+    </view>
+
+    <view class="codeTextTwo">
+        <text>备注：</text>
+        
+        <text>保存后，需将二维码分享给邀请用户</text>
+    </view>
+</view>

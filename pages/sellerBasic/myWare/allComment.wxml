@@ -1,0 +1,26 @@
+<!--pages/sellerBasic/myWare/allComment-->
+<view class="container">
+    <view class="allCommentElement" style="{{isIphoneX ? 'margin-bottom: 68rpx' : ''}}">
+        <view class="allComment">
+            <!-- <view class="allCommentType">
+                <text>防水性能好</text>
+
+                <text>好看</text>
+
+                <text>戴着舒服</text>
+            </view> -->
+
+            <view class="commentList">
+                <view class="everyComment" wx:for="{{commentList}}" wx:key="{{index}}">
+                    <view class="everyCommentInfo">
+                        <image src="{{item.headimg}}"></image>
+
+                        <text>{{item.username}}</text>
+                    </view>
+
+                    <text class="everyContent">{{item.review_content}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

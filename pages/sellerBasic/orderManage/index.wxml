@@ -1,0 +1,128 @@
+<!--pages/sellerBasic/orderManage/index-->
+<!-- 大B -->
+<view class="container" style="display: none;">
+    <scroll-view class="optionElement" scroll-x>
+        <view class="everyOption {{optionActive == index ? 'optionActive' : ''}}" wx:for="{{optionList}}" wx:key="{{index}}">
+            <text>{{item}}</text>
+
+            <text class="optionActiveBorder" wx:if="{{optionActive == index}}"></text>
+        </view>
+    </scroll-view>
+
+    <view class="orderElement" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+        <view class="everyOrder" wx:for="{{orderList}}" wx:key="{{index}}">
+            <view class="orderInfo">
+                <image src="{{item.imgUrl}}"></image>
+
+                <view class="orderDescribe">
+                    <text class="orderTitle">{{item.text}}</text>
+
+                    <view class="orderPriceInfo">
+                        <view class="orderPrice">
+                            <text>{{item.price}}</text>
+
+                            <text>x{{item.num}}</text>
+                        </view>
+
+                        <text wx:if="{{item.state == 0}}">待付款</text>
+
+                        <text wx:if="{{item.state == 1}}">待发货</text>
+
+                        <text wx:if="{{item.state == 2}}">待收货</text>
+
+                        <text wx:if="{{item.state == 3}}">待退款</text>
+
+                        <text wx:if="{{item.state == 4}}">待评价</text>
+
+                        <text wx:if="{{item.state == 5}}">已完成</text>
+                    </view>
+                </view>
+            </view>
+
+            <view class="orderHandle">
+                <text class="handleElement" wx:if="{{item.state == 0}}">提醒买家付款</text>
+
+                <text class="handleElement" wx:if="{{item.state == 1}}" bindtap="goSendGood">去发货</text>
+
+                <text class="handleElement" wx:if="{{item.state == 2}}">提醒买家收货</text>
+
+                <text class="handleElement" wx:if="{{item.state == 3}}" bindtap="goEditGood">退款</text>
+
+                <text class="handleElement" wx:if="{{item.state == 4}}" bindtap="goOrderComment">去评价</text>
+
+                <text class="handleElement" wx:if="{{item.state == 5}}" bindtap="goOrderDetails">查看详情</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="{{isIphoneX ? 'fix-iphonex-button' : ''}}" wx:if="{{isIphoneX}}"></view> -->
+</view>
+
+<!-- 小B -->
+<view class="container">
+    <scroll-view class="optionElement" scroll-x>
+        <view class="everyOption {{optionActive == index ? 'optionActive' : ''}}" wx:for="{{optionList}}" wx:key="{{index}}">
+            <text>{{item}}</text>
+
+            <text class="optionActiveBorder" wx:if="{{optionActive == index}}"></text>
+        </view>
+    </scroll-view>
+
+    <view class="orderElement" style="{{isIphoneX ? 'padding-bottom: 68rpx;' : ''}}">
+        <view class="everyOrder" wx:for="{{orderList}}" wx:key="{{index}}">
+            <view class="orderInfo">
+                <image src="{{item.imgUrl}}"></image>
+
+                <view class="orderDescribe">
+                    <text class="orderTitle">{{item.text}}</text>
+
+                    <view class="orderPriceInfo">
+                        <view class="orderPrice">
+                            <text>{{item.price}}</text>
+
+                            <text>x{{item.num}}</text>
+                        </view>
+
+                        <text wx:if="{{item.state == 0}}">待付款</text>
+
+                        <text wx:if="{{item.state == 1}}">待发货</text>
+
+                        <text wx:if="{{item.state == 2}}">待收货</text>
+
+                        <text wx:if="{{item.state == 3}}">待退款</text>
+
+                        <text wx:if="{{item.state == 4}}">待评价</text>
+
+                        <text wx:if="{{item.state == 5}}">已完成</text>
+                    </view>
+                </view>
+            </view>
+
+            <view class="orderHandle">
+                <text class="contactSeller">联系买家</text>
+                
+                <view class="agentHandle" wx:if="{{item.state == 0}}">
+                    <text class="agentHandleElement">查看物流</text>
+                    
+                    <text class="agentHandleElement">提醒买家付款</text>
+                </view>
+
+                <view class="agentHandle" wx:if="{{item.state == 2}}">
+                    <text class="agentHandleElement" bindtap="goOrderInfo">查看详情</text>
+
+                    <text class="agentHandleElement">提醒买家收货</text>
+                </view>
+
+                <view class="agentHandle" wx:if="{{item.state == 4}}">
+                    <text class="agentHandleElement" bindtap="goOrderComment">查看评价</text>
+                </view>
+
+                <view class="agentHandle" wx:if="{{item.state == 5}}">
+                    <text class="agentHandleElement" bindtap="goOrderDetails">查看物流</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view class="{{isIphoneX ? 'fix-iphonex-button' : ''}}" wx:if="{{isIphoneX}}"></view> -->
+</view>

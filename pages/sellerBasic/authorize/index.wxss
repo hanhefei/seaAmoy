@@ -1,0 +1,82 @@
+/** pages/sellerBasic/authorize/index **/
+.container {
+    border-top: 2rpx solid #C4C4C4;
+}
+.icon {
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    margin: 0 auto;
+    margin-top: 100rpx;
+    margin-bottom: 90rpx;
+}
+
+.inputElement {
+    display: block;
+    width: 590rpx;
+    margin: 0 auto;
+}
+.everyInput {
+    display: flex;
+    height: 60rpx;
+    border-bottom: 2rpx solid #DBDBDB;
+    justify-content: space-between;
+    align-items: center;
+}
+.everyInput:last-child {
+    margin-top: 48rpx;
+}
+.everyInput text {
+    display: block;
+    font-size: 28rpx;
+    color: #999999;
+}
+.everyInput input {
+    display: block;
+    width: 502rpx;
+    height: 100%;
+    font-size: 28rpx;
+}
+
+.loginBtn {
+    width: 690rpx;
+    margin: 0 auto;
+    margin-top: 96rpx;
+}
+.loginBtn text {
+    display: block;
+    width: 100%;
+    height: 80rpx;
+    background: #EA2243;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    text-align: center;
+}
+
+.wechatLogin {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 120rpx;
+    justify-content: center;
+    flex-direction: column;
+}
+.wechatLogin image {
+    display: block;
+    width: 110rpx;
+    height: 110rpx;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.wechatLogin text {
+    display: block;
+    margin-top: 20rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color: #B8B8B8;
+    text-align: center;
+}
+.wechatLogin text:last-child {
+    margin-top: 0;
+}

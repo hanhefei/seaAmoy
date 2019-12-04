@@ -1,0 +1,50 @@
+<!--pages/sellerBasic/orderManage/orderComment-->
+<!-- 大B -->
+<view class="container" style="display: none;">
+    <view class="commentStars">
+        <text>描述相符</text>
+
+        <view class="commentStarsNum">
+            <view class="everyStar" wx:for="{{5}}" wx:key="{{index}}">
+                <image src="/resources/imgs/starsActive.png" wx:if="{{index + 1 <= starsNum}}"></image>
+
+                <image src="/resources/imgs/stars.png" wx:else></image>
+            </view>
+
+            <text>非常好</text>
+        </view>
+    </view>
+
+    <text class="commentText">评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案</text>
+
+    <text class="commentBtn">回复</text>
+</view>
+
+<!-- 小B -->
+<view class="container">
+    <view class="commentStars">
+        <text>描述相符</text>
+
+        <view class="commentStarsNum">
+            <view class="everyStar" wx:for="{{5}}" wx:key="{{index}}">
+                <image src="/resources/imgs/starsActive.png" wx:if="{{index + 1 <= starsNum}}"></image>
+
+                <image src="/resources/imgs/stars.png" wx:else></image>
+            </view>
+
+            <text>非常好</text>
+        </view>
+    </view>
+
+    <text class="commentText">评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案评价文案</text>
+</view>
+
+<view class="container" style="display: none;">
+    <view class="commentElement">
+        <text>回复评价：</text>
+
+        <textarea class="commentTextarea" placeholder="请输入回复内容"></textarea>
+    </view>
+
+    <text class="confirm">确认</text>
+</view> 

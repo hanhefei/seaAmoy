@@ -1,0 +1,63 @@
+<!--pages/agent/couponManage/index-->
+<view class="container" style="{{isIphoneX ? 'margin-bottom: 68rpx;' : ''}}">
+    <view class="couponPublishElement">
+        <text>发布优惠券</text>
+
+        <view class="couponDetails">
+            <view class="everyCouponInfo">
+                <text>优惠券金额：</text>
+
+                <input type="number" value="{{couponPrice}}" maxlength="6" placeholder="优惠卷金额" data-variable="couponPrice" bindinput="saveInput" />
+            </view>
+
+            <view class="everyCouponInfo">
+                <text>优惠券满多少金额可用：</text>
+
+                <input type="number" value="{{couponMoney}}" maxlength="6" placeholder="优惠卷使用条件" data-variable="couponMoney" bindinput="saveInput" />
+            </view>
+
+            <view class="everyCouponInfo">
+                <text>优惠券使用期限：</text>
+                
+                <view class="couponTime">
+                    <text>{{nowDate}}</text>
+
+                    <text>-</text>
+
+                    <picker mode="date" value="{{endDate}}" start="{{startDate}}" bindchange="changeEndDate">
+                        <text class="picker" style="color: {{endDate ? '#333333' : '#999999'}}">{{endDate ? endDate : '结束时间'}}</text>
+                    </picker>
+                </view>
+            </view>
+
+            <text bindtap="publishCoupon">确认</text>
+        </view>
+    </view>
+
+    <view class="couponListElement">
+        <text>已发布优惠券</text>
+
+        <view class="couponList">
+            <view class="everyCoupon" wx:for="{{couponList}}" wx:key="{{index}}" style="margin-right: {{(index + 1) % 2 == 0 ? '0' : '32rpx'}}">
+                <view class="couponLeft">
+                    <view class="leftTop">
+                        <text>¥</text>
+                        <text>{{item.price}}</text>
+                    </view>
+
+                    <text>有效期{{item.create_time}}-{{item.end_time}}</text>
+                </view>
+
+                <view class="couponRight">
+                    <text>单笔满{{item.man_price}}</text>
+
+                    <text></text>
+                </view>
+
+                <image class="everyIcon" src="/resources/imgs/couponIcon.png"></image>
+
+                <image class="delThis" src="/resources/imgs/couponDel.png" data-coupon-id="{{item.id}}" bindtap="deleteCoupon"></image>
+            </view>
+        </view>
+    </view>
+</view>
